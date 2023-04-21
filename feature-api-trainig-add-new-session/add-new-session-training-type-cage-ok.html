@@ -1,0 +1,2327 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="robots" content="noindex,nofollow">
+    <title>Laravel Enlighten</title>
+    <link rel="stylesheet" href="https://fungometrics-api-doc.surge.sh/assets/css/app.css?0.2.0">
+    <style>svg {max-width: 50px;}</style>
+</head>
+<body class="bg-gray-900 overflow-hidden flex absolute">
+
+    <div class="w-screen h-screen block  overflow-hidden top-0 ">
+        <div class="h-screen flex overflow-hidden bg-gray-100" x-data="{open: false}">
+    <div >
+        <div x-show="open" x-cloak class="fixed inset-0 flex z-40">
+            <div x-show="open" x-cloak class="fixed inset-0"
+                 x-transition:enter="transition-opacity ease-linear duration-300"
+                 xtransition:enter-start="opacity-0"
+                 x-transition:enter-end="opacity-100"
+                 x-transition:leave="transition-opacity ease-linear duration-300"
+                 x-transition:leave-start="opacity-100"
+                 x-transition:leave-end="opacity-0"
+            >
+                <div class="absolute inset-0 bg-gray-600 opacity-75"></div>
+            </div>
+            <div x-show="open" x-cloak
+                 x-transition:enter="transition ease-in-out duration-300 transform"
+                 xtransition:enter-start="-translate-x-full"
+                 x-transition:enter-end="translate-x-0"
+                 x-transition:leave="transition ease-in-out duration-300 transform"
+                 x-transition:leave-start="translate-x-0"
+                 x-transition:leave-end="-translate-x-full"
+                 class="relative flex-1 flex flex-col max-w-xs w-full pt-5 pb-4 bg-gray-800">
+                <div class="absolute top-0 right-0 -mr-14 p-1">
+                    <button x-on:click="open = !open" class="flex items-center justify-center h-12 w-12 rounded-full focus:outline-none focus:bg-gray-600" aria-label="Close sidebar">
+                        <svg class="h-6 w-6 text-white" stroke="currentColor" fill="none" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                        </svg>
+                    </button>
+                </div>
+                <div class="flex-shrink-0 flex items-center px-4">
+                    <span class="rounded-full text-teal-800 bg-teal-500 p-1">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                    </span>
+                    <span class="font-bold text-gray-100 text-2xl pl-4">Enlighten</span>
+                </div>
+                <div class="mt-5 flex-1 h-0 overflow-y-auto">
+                    <nav class="px-2 space-y-1">
+                        
+                                                    <a href="https://fungometrics-api-doc.surge.sh/areas/feature.html" class=" group flex items-center px-2 py-2 text-base leading-6 font-medium rounded-md text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700 transition ease-in-out duration-150">
+                                <svg class="mr-3 h-6 w-6 text-gray-400 group-hover:text-gray-300 group-focus:text-gray-300 transition ease-in-out duration-150" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z"></path></svg>
+                                Features
+                            </a>
+                                                            <div class="flex flex-col space-y-2" x-data="{open: false}">
+                                    <button
+                                        x-on:click="open = !open"
+                                        type="button" name="toggle panel"
+                                            class="group flex w-full text-left items-center px-2 py-1 text-sm leading-6 font-light rounded-md text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700 transition ease-in-out duration-150">
+                                        Other Modules
+                                    </button>
+                                    <div class="w-full" x-cloak x-show="open">
+                                                                                    <a href="https://fungometrics-api-doc.surge.sh/feature-api-auth-login-controller.html"
+                                               class="group flex items-center px-4 py-1 text-sm leading-6 font-light rounded-md text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700 transition ease-in-out duration-150">
+                                                Login Controller
+                                            </a>
+                                                                                    <a href="https://fungometrics-api-doc.surge.sh/feature-api-auth-register-coach-controller.html"
+                                               class="group flex items-center px-4 py-1 text-sm leading-6 font-light rounded-md text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700 transition ease-in-out duration-150">
+                                                Register Coach Controller
+                                            </a>
+                                                                                    <a href="https://fungometrics-api-doc.surge.sh/feature-api-auth-register-player-controller.html"
+                                               class="group flex items-center px-4 py-1 text-sm leading-6 font-light rounded-md text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700 transition ease-in-out duration-150">
+                                                Register Player Controller
+                                            </a>
+                                                                                    <a href="https://fungometrics-api-doc.surge.sh/feature-api-coach-add-coach.html"
+                                               class="group flex items-center px-4 py-1 text-sm leading-6 font-light rounded-md text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700 transition ease-in-out duration-150">
+                                                Add Coach
+                                            </a>
+                                                                                    <a href="https://fungometrics-api-doc.surge.sh/feature-api-coach-add-players.html"
+                                               class="group flex items-center px-4 py-1 text-sm leading-6 font-light rounded-md text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700 transition ease-in-out duration-150">
+                                                Add Players
+                                            </a>
+                                                                                    <a href="https://fungometrics-api-doc.surge.sh/feature-api-coach-add-team.html"
+                                               class="group flex items-center px-4 py-1 text-sm leading-6 font-light rounded-md text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700 transition ease-in-out duration-150">
+                                                Add Team
+                                            </a>
+                                                                                    <a href="https://fungometrics-api-doc.surge.sh/feature-api-coach-edit-coach.html"
+                                               class="group flex items-center px-4 py-1 text-sm leading-6 font-light rounded-md text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700 transition ease-in-out duration-150">
+                                                Edit Coach
+                                            </a>
+                                                                                    <a href="https://fungometrics-api-doc.surge.sh/feature-api-coach-edit-player.html"
+                                               class="group flex items-center px-4 py-1 text-sm leading-6 font-light rounded-md text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700 transition ease-in-out duration-150">
+                                                Edit Player
+                                            </a>
+                                                                                    <a href="https://fungometrics-api-doc.surge.sh/feature-api-coach-edit-teams.html"
+                                               class="group flex items-center px-4 py-1 text-sm leading-6 font-light rounded-md text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700 transition ease-in-out duration-150">
+                                                Edit Teams
+                                            </a>
+                                                                                    <a href="https://fungometrics-api-doc.surge.sh/feature-api-coach-get-coaches-list.html"
+                                               class="group flex items-center px-4 py-1 text-sm leading-6 font-light rounded-md text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700 transition ease-in-out duration-150">
+                                                Get Coaches List
+                                            </a>
+                                                                                    <a href="https://fungometrics-api-doc.surge.sh/feature-api-coach-get-players-list.html"
+                                               class="group flex items-center px-4 py-1 text-sm leading-6 font-light rounded-md text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700 transition ease-in-out duration-150">
+                                                Get Players List
+                                            </a>
+                                                                                    <a href="https://fungometrics-api-doc.surge.sh/feature-api-coach-get-team-player.html"
+                                               class="group flex items-center px-4 py-1 text-sm leading-6 font-light rounded-md text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700 transition ease-in-out duration-150">
+                                                Get Team Player
+                                            </a>
+                                                                                    <a href="https://fungometrics-api-doc.surge.sh/feature-api-coach-get-team.html"
+                                               class="group flex items-center px-4 py-1 text-sm leading-6 font-light rounded-md text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700 transition ease-in-out duration-150">
+                                                Get Team
+                                            </a>
+                                                                                    <a href="https://fungometrics-api-doc.surge.sh/feature-api-coach-remove-player.html"
+                                               class="group flex items-center px-4 py-1 text-sm leading-6 font-light rounded-md text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700 transition ease-in-out duration-150">
+                                                Remove Player
+                                            </a>
+                                                                                    <a href="https://fungometrics-api-doc.surge.sh/feature-api-player-get-fitness.html"
+                                               class="group flex items-center px-4 py-1 text-sm leading-6 font-light rounded-md text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700 transition ease-in-out duration-150">
+                                                Get Fitness
+                                            </a>
+                                                                                    <a href="https://fungometrics-api-doc.surge.sh/feature-api-player-save-fitness.html"
+                                               class="group flex items-center px-4 py-1 text-sm leading-6 font-light rounded-md text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700 transition ease-in-out duration-150">
+                                                Save Fitness
+                                            </a>
+                                                                                    <a href="https://fungometrics-api-doc.surge.sh/feature-api-score-statistics-players.html"
+                                               class="group flex items-center px-4 py-1 text-sm leading-6 font-light rounded-md text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700 transition ease-in-out duration-150">
+                                                Score Statistics Players
+                                            </a>
+                                                                                    <a href="https://fungometrics-api-doc.surge.sh/feature-api-search-coaches.html"
+                                               class="group flex items-center px-4 py-1 text-sm leading-6 font-light rounded-md text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700 transition ease-in-out duration-150">
+                                                Search Coaches
+                                            </a>
+                                                                                    <a href="https://fungometrics-api-doc.surge.sh/feature-api-search-players.html"
+                                               class="group flex items-center px-4 py-1 text-sm leading-6 font-light rounded-md text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700 transition ease-in-out duration-150">
+                                                Search Players
+                                            </a>
+                                                                                    <a href="https://fungometrics-api-doc.surge.sh/feature-api-sessions-get-all-session-by-mode.html"
+                                               class="group flex items-center px-4 py-1 text-sm leading-6 font-light rounded-md text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700 transition ease-in-out duration-150">
+                                                Get All Session By Mode
+                                            </a>
+                                                                                    <a href="https://fungometrics-api-doc.surge.sh/feature-api-sessions-get-all-session-by-type.html"
+                                               class="group flex items-center px-4 py-1 text-sm leading-6 font-light rounded-md text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700 transition ease-in-out duration-150">
+                                                Get All Session By Type
+                                            </a>
+                                                                                    <a href="https://fungometrics-api-doc.surge.sh/feature-api-sessions-get-batting-statistics-by-practice.html"
+                                               class="group flex items-center px-4 py-1 text-sm leading-6 font-light rounded-md text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700 transition ease-in-out duration-150">
+                                                Get Batting Statistics By Practice
+                                            </a>
+                                                                                    <a href="https://fungometrics-api-doc.surge.sh/feature-api-sessions-get-bullpen-statistics-by-practice.html"
+                                               class="group flex items-center px-4 py-1 text-sm leading-6 font-light rounded-md text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700 transition ease-in-out duration-150">
+                                                Get Bullpen Statistics By Practice
+                                            </a>
+                                                                                    <a href="https://fungometrics-api-doc.surge.sh/feature-api-sessions-get-cage-statistics-by-practice.html"
+                                               class="group flex items-center px-4 py-1 text-sm leading-6 font-light rounded-md text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700 transition ease-in-out duration-150">
+                                                Get Cage Statistics By Practice
+                                            </a>
+                                                                                    <a href="https://fungometrics-api-doc.surge.sh/feature-api-sessions-get-exit-velocity-practice-results.html"
+                                               class="group flex items-center px-4 py-1 text-sm leading-6 font-light rounded-md text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700 transition ease-in-out duration-150">
+                                                Get Exit Velocity Practice Results
+                                            </a>
+                                                                                    <a href="https://fungometrics-api-doc.surge.sh/feature-api-sessions-get-full-list-all-training-mode.html"
+                                               class="group flex items-center px-4 py-1 text-sm leading-6 font-light rounded-md text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700 transition ease-in-out duration-150">
+                                                Get Full List All Training Mode
+                                            </a>
+                                                                                    <a href="https://fungometrics-api-doc.surge.sh/feature-api-sessions-get-last-sessions.html"
+                                               class="group flex items-center px-4 py-1 text-sm leading-6 font-light rounded-md text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700 transition ease-in-out duration-150">
+                                                Get Last Sessions
+                                            </a>
+                                                                                    <a href="https://fungometrics-api-doc.surge.sh/feature-api-sessions-get-list-live-a-b-sessions.html"
+                                               class="group flex items-center px-4 py-1 text-sm leading-6 font-light rounded-md text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700 transition ease-in-out duration-150">
+                                                Get List Live A B Sessions
+                                            </a>
+                                                                                    <a href="https://fungometrics-api-doc.surge.sh/feature-api-sessions-get-live-a-b-statistics-by-practice.html"
+                                               class="group flex items-center px-4 py-1 text-sm leading-6 font-light rounded-md text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700 transition ease-in-out duration-150">
+                                                Get Live A B Statistics By Practice
+                                            </a>
+                                                                                    <a href="https://fungometrics-api-doc.surge.sh/feature-api-sessions-get-long-toss-practice-results.html"
+                                               class="group flex items-center px-4 py-1 text-sm leading-6 font-light rounded-md text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700 transition ease-in-out duration-150">
+                                                Get Long Toss Practice Results
+                                            </a>
+                                                                                    <a href="https://fungometrics-api-doc.surge.sh/feature-api-sessions-get-session-by-mode.html"
+                                               class="group flex items-center px-4 py-1 text-sm leading-6 font-light rounded-md text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700 transition ease-in-out duration-150">
+                                                Get Session By Mode
+                                            </a>
+                                                                                    <a href="https://fungometrics-api-doc.surge.sh/feature-api-sessions-get-session-by-type.html"
+                                               class="group flex items-center px-4 py-1 text-sm leading-6 font-light rounded-md text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700 transition ease-in-out duration-150">
+                                                Get Session By Type
+                                            </a>
+                                                                                    <a href="https://fungometrics-api-doc.surge.sh/feature-api-sessions-get-weight-ball-practice-results.html"
+                                               class="group flex items-center px-4 py-1 text-sm leading-6 font-light rounded-md text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700 transition ease-in-out duration-150">
+                                                Get Weight Ball Practice Results
+                                            </a>
+                                                                                    <a href="https://fungometrics-api-doc.surge.sh/feature-api-trainig-add-new-live-a-b-session.html"
+                                               class="group flex items-center px-4 py-1 text-sm leading-6 font-light rounded-md text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700 transition ease-in-out duration-150">
+                                                Add New Live A B Session
+                                            </a>
+                                                                                    <a href="https://fungometrics-api-doc.surge.sh/feature-api-trainig-add-new-session.html"
+                                               class="group flex items-center px-4 py-1 text-sm leading-6 font-light rounded-md text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700 transition ease-in-out duration-150">
+                                                Add New Session
+                                            </a>
+                                                                                    <a href="https://fungometrics-api-doc.surge.sh/feature-api-trainig-delete-practice.html"
+                                               class="group flex items-center px-4 py-1 text-sm leading-6 font-light rounded-md text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700 transition ease-in-out duration-150">
+                                                Delete Practice
+                                            </a>
+                                                                                    <a href="https://fungometrics-api-doc.surge.sh/feature-api-trainig-finish-practice.html"
+                                               class="group flex items-center px-4 py-1 text-sm leading-6 font-light rounded-md text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700 transition ease-in-out duration-150">
+                                                Finish Practice
+                                            </a>
+                                                                                    <a href="https://fungometrics-api-doc.surge.sh/feature-api-trainig-get-training-session.html"
+                                               class="group flex items-center px-4 py-1 text-sm leading-6 font-light rounded-md text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700 transition ease-in-out duration-150">
+                                                Get Training Session
+                                            </a>
+                                                                                    <a href="https://fungometrics-api-doc.surge.sh/feature-api-trainig-result-batting-result-practice.html"
+                                               class="group flex items-center px-4 py-1 text-sm leading-6 font-light rounded-md text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700 transition ease-in-out duration-150">
+                                                Batting Result Practice
+                                            </a>
+                                                                                    <a href="https://fungometrics-api-doc.surge.sh/feature-api-trainig-result-bullpen-result-practice.html"
+                                               class="group flex items-center px-4 py-1 text-sm leading-6 font-light rounded-md text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700 transition ease-in-out duration-150">
+                                                Bullpen Result Practice
+                                            </a>
+                                                                                    <a href="https://fungometrics-api-doc.surge.sh/feature-api-trainig-result-cage-result-practice.html"
+                                               class="group flex items-center px-4 py-1 text-sm leading-6 font-light rounded-md text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700 transition ease-in-out duration-150">
+                                                Cage Result Practice
+                                            </a>
+                                                                                    <a href="https://fungometrics-api-doc.surge.sh/feature-api-trainig-result-exit-velocity-result-practice.html"
+                                               class="group flex items-center px-4 py-1 text-sm leading-6 font-light rounded-md text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700 transition ease-in-out duration-150">
+                                                Exit Velocity Result Practice
+                                            </a>
+                                                                                    <a href="https://fungometrics-api-doc.surge.sh/feature-api-trainig-result-live-a-b-result-practice.html"
+                                               class="group flex items-center px-4 py-1 text-sm leading-6 font-light rounded-md text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700 transition ease-in-out duration-150">
+                                                Live A B Result Practice
+                                            </a>
+                                                                                    <a href="https://fungometrics-api-doc.surge.sh/feature-api-trainig-result-long-toss-result-practice.html"
+                                               class="group flex items-center px-4 py-1 text-sm leading-6 font-light rounded-md text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700 transition ease-in-out duration-150">
+                                                Long Toss Result Practice
+                                            </a>
+                                                                                    <a href="https://fungometrics-api-doc.surge.sh/feature-api-trainig-result-weight-ball-result-practice.html"
+                                               class="group flex items-center px-4 py-1 text-sm leading-6 font-light rounded-md text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700 transition ease-in-out duration-150">
+                                                Weight Ball Result Practice
+                                            </a>
+                                                                            </div>
+                                </div>
+                                                                        </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="flex flex-col w-0 flex-1 overflow-hidden">
+        <div class="relative z-10 flex-shrink-0 flex h-16 bg-white shadow">
+            <button x-on:click="open = ! open" class="px-4 border-r border-gray-700 text-gray-500 focus:outline-none bg-gray-900 focus:bg-gray-800 focus:text-gray-600" aria-label="Open sidebar">
+                <svg class="h-6 w-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" />
+                </svg>
+            </button>
+            <div class="flex-1 px-4 space-x-4 flex justify-end items-center bg-gray-800">
+                <span class="rounded-full text-teal-100 bg-teal-500 p-1  hidden md:flex">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                </span>
+                                                            <div run="{&quot;id&quot;:32,&quot;branch&quot;:&quot;develop&quot;,&quot;head&quot;:&quot;360ae8b&quot;,&quot;modified&quot;:0,&quot;created_at&quot;:&quot;2023-04-11T21:55:23.000000Z&quot;,&quot;updated_at&quot;:&quot;2023-04-11T21:55:23.000000Z&quot;,&quot;groups&quot;:[{&quot;id&quot;:1517,&quot;run_id&quot;:32,&quot;class_name&quot;:&quot;Tests\\Feature\\Api\\Auth\\LoginControllerTest&quot;,&quot;title&quot;:&quot;Login Controller&quot;,&quot;slug&quot;:&quot;feature-api-auth-login-controller&quot;,&quot;description&quot;:null,&quot;area&quot;:&quot;feature&quot;,&quot;order_num&quot;:9999,&quot;created_at&quot;:&quot;2023-04-11T21:55:31.000000Z&quot;,&quot;updated_at&quot;:&quot;2023-04-11T21:55:31.000000Z&quot;},{&quot;id&quot;:1518,&quot;run_id&quot;:32,&quot;class_name&quot;:&quot;Tests\\Feature\\Api\\Auth\\RegisterCoachControllerTest&quot;,&quot;title&quot;:&quot;Register Coach Controller&quot;,&quot;slug&quot;:&quot;feature-api-auth-register-coach-controller&quot;,&quot;description&quot;:null,&quot;area&quot;:&quot;feature&quot;,&quot;order_num&quot;:9999,&quot;created_at&quot;:&quot;2023-04-11T21:55:33.000000Z&quot;,&quot;updated_at&quot;:&quot;2023-04-11T21:55:33.000000Z&quot;},{&quot;id&quot;:1519,&quot;run_id&quot;:32,&quot;class_name&quot;:&quot;Tests\\Feature\\Api\\Auth\\RegisterPlayerControllerTest&quot;,&quot;title&quot;:&quot;Register Player Controller&quot;,&quot;slug&quot;:&quot;feature-api-auth-register-player-controller&quot;,&quot;description&quot;:null,&quot;area&quot;:&quot;feature&quot;,&quot;order_num&quot;:9999,&quot;created_at&quot;:&quot;2023-04-11T21:55:34.000000Z&quot;,&quot;updated_at&quot;:&quot;2023-04-11T21:55:34.000000Z&quot;},{&quot;id&quot;:1520,&quot;run_id&quot;:32,&quot;class_name&quot;:&quot;Tests\\Feature\\Api\\Coach\\AddCoachTest&quot;,&quot;title&quot;:&quot;Add Coach&quot;,&quot;slug&quot;:&quot;feature-api-coach-add-coach&quot;,&quot;description&quot;:null,&quot;area&quot;:&quot;feature&quot;,&quot;order_num&quot;:9999,&quot;created_at&quot;:&quot;2023-04-11T21:55:34.000000Z&quot;,&quot;updated_at&quot;:&quot;2023-04-11T21:55:34.000000Z&quot;},{&quot;id&quot;:1521,&quot;run_id&quot;:32,&quot;class_name&quot;:&quot;Tests\\Feature\\Api\\Coach\\AddPlayersTest&quot;,&quot;title&quot;:&quot;Add Players&quot;,&quot;slug&quot;:&quot;feature-api-coach-add-players&quot;,&quot;description&quot;:null,&quot;area&quot;:&quot;feature&quot;,&quot;order_num&quot;:9999,&quot;created_at&quot;:&quot;2023-04-11T21:55:35.000000Z&quot;,&quot;updated_at&quot;:&quot;2023-04-11T21:55:35.000000Z&quot;},{&quot;id&quot;:1522,&quot;run_id&quot;:32,&quot;class_name&quot;:&quot;Tests\\Feature\\Api\\Coach\\AddTeamTest&quot;,&quot;title&quot;:&quot;Add Team&quot;,&quot;slug&quot;:&quot;feature-api-coach-add-team&quot;,&quot;description&quot;:null,&quot;area&quot;:&quot;feature&quot;,&quot;order_num&quot;:9999,&quot;created_at&quot;:&quot;2023-04-11T21:55:36.000000Z&quot;,&quot;updated_at&quot;:&quot;2023-04-11T21:55:36.000000Z&quot;},{&quot;id&quot;:1523,&quot;run_id&quot;:32,&quot;class_name&quot;:&quot;Tests\\Feature\\Api\\Coach\\EditCoachTest&quot;,&quot;title&quot;:&quot;Edit Coach&quot;,&quot;slug&quot;:&quot;feature-api-coach-edit-coach&quot;,&quot;description&quot;:null,&quot;area&quot;:&quot;feature&quot;,&quot;order_num&quot;:9999,&quot;created_at&quot;:&quot;2023-04-11T21:55:36.000000Z&quot;,&quot;updated_at&quot;:&quot;2023-04-11T21:55:36.000000Z&quot;},{&quot;id&quot;:1524,&quot;run_id&quot;:32,&quot;class_name&quot;:&quot;Tests\\Feature\\Api\\Coach\\EditPlayerTest&quot;,&quot;title&quot;:&quot;Edit Player&quot;,&quot;slug&quot;:&quot;feature-api-coach-edit-player&quot;,&quot;description&quot;:null,&quot;area&quot;:&quot;feature&quot;,&quot;order_num&quot;:9999,&quot;created_at&quot;:&quot;2023-04-11T21:55:37.000000Z&quot;,&quot;updated_at&quot;:&quot;2023-04-11T21:55:37.000000Z&quot;},{&quot;id&quot;:1525,&quot;run_id&quot;:32,&quot;class_name&quot;:&quot;Tests\\Feature\\Api\\Coach\\EditTeamsTest&quot;,&quot;title&quot;:&quot;Edit Teams&quot;,&quot;slug&quot;:&quot;feature-api-coach-edit-teams&quot;,&quot;description&quot;:null,&quot;area&quot;:&quot;feature&quot;,&quot;order_num&quot;:9999,&quot;created_at&quot;:&quot;2023-04-11T21:55:38.000000Z&quot;,&quot;updated_at&quot;:&quot;2023-04-11T21:55:38.000000Z&quot;},{&quot;id&quot;:1526,&quot;run_id&quot;:32,&quot;class_name&quot;:&quot;Tests\\Feature\\Api\\Coach\\GetCoachesListTest&quot;,&quot;title&quot;:&quot;Get Coaches List&quot;,&quot;slug&quot;:&quot;feature-api-coach-get-coaches-list&quot;,&quot;description&quot;:null,&quot;area&quot;:&quot;feature&quot;,&quot;order_num&quot;:9999,&quot;created_at&quot;:&quot;2023-04-11T21:55:38.000000Z&quot;,&quot;updated_at&quot;:&quot;2023-04-11T21:55:38.000000Z&quot;},{&quot;id&quot;:1527,&quot;run_id&quot;:32,&quot;class_name&quot;:&quot;Tests\\Feature\\Api\\Coach\\GetPlayersListTest&quot;,&quot;title&quot;:&quot;Get Players List&quot;,&quot;slug&quot;:&quot;feature-api-coach-get-players-list&quot;,&quot;description&quot;:null,&quot;area&quot;:&quot;feature&quot;,&quot;order_num&quot;:9999,&quot;created_at&quot;:&quot;2023-04-11T21:55:39.000000Z&quot;,&quot;updated_at&quot;:&quot;2023-04-11T21:55:39.000000Z&quot;},{&quot;id&quot;:1528,&quot;run_id&quot;:32,&quot;class_name&quot;:&quot;Tests\\Feature\\Api\\Coach\\GetTeamPlayerTest&quot;,&quot;title&quot;:&quot;Get Team Player&quot;,&quot;slug&quot;:&quot;feature-api-coach-get-team-player&quot;,&quot;description&quot;:null,&quot;area&quot;:&quot;feature&quot;,&quot;order_num&quot;:9999,&quot;created_at&quot;:&quot;2023-04-11T21:55:40.000000Z&quot;,&quot;updated_at&quot;:&quot;2023-04-11T21:55:40.000000Z&quot;},{&quot;id&quot;:1529,&quot;run_id&quot;:32,&quot;class_name&quot;:&quot;Tests\\Feature\\Api\\Coach\\GetTeamTest&quot;,&quot;title&quot;:&quot;Get Team&quot;,&quot;slug&quot;:&quot;feature-api-coach-get-team&quot;,&quot;description&quot;:null,&quot;area&quot;:&quot;feature&quot;,&quot;order_num&quot;:9999,&quot;created_at&quot;:&quot;2023-04-11T21:55:40.000000Z&quot;,&quot;updated_at&quot;:&quot;2023-04-11T21:55:40.000000Z&quot;},{&quot;id&quot;:1530,&quot;run_id&quot;:32,&quot;class_name&quot;:&quot;Tests\\Feature\\Api\\Coach\\RemovePlayerTest&quot;,&quot;title&quot;:&quot;Remove Player&quot;,&quot;slug&quot;:&quot;feature-api-coach-remove-player&quot;,&quot;description&quot;:null,&quot;area&quot;:&quot;feature&quot;,&quot;order_num&quot;:9999,&quot;created_at&quot;:&quot;2023-04-11T21:55:41.000000Z&quot;,&quot;updated_at&quot;:&quot;2023-04-11T21:55:41.000000Z&quot;},{&quot;id&quot;:1531,&quot;run_id&quot;:32,&quot;class_name&quot;:&quot;Tests\\Feature\\Api\\Player\\GetFitnessTest&quot;,&quot;title&quot;:&quot;Get Fitness&quot;,&quot;slug&quot;:&quot;feature-api-player-get-fitness&quot;,&quot;description&quot;:null,&quot;area&quot;:&quot;feature&quot;,&quot;order_num&quot;:9999,&quot;created_at&quot;:&quot;2023-04-11T21:55:41.000000Z&quot;,&quot;updated_at&quot;:&quot;2023-04-11T21:55:41.000000Z&quot;},{&quot;id&quot;:1532,&quot;run_id&quot;:32,&quot;class_name&quot;:&quot;Tests\\Feature\\Api\\Player\\SaveFitnessTest&quot;,&quot;title&quot;:&quot;Save Fitness&quot;,&quot;slug&quot;:&quot;feature-api-player-save-fitness&quot;,&quot;description&quot;:null,&quot;area&quot;:&quot;feature&quot;,&quot;order_num&quot;:9999,&quot;created_at&quot;:&quot;2023-04-11T21:55:41.000000Z&quot;,&quot;updated_at&quot;:&quot;2023-04-11T21:55:41.000000Z&quot;},{&quot;id&quot;:1533,&quot;run_id&quot;:32,&quot;class_name&quot;:&quot;Tests\\Feature\\Api\\ScoreStatisticsPlayersTest&quot;,&quot;title&quot;:&quot;Score Statistics Players&quot;,&quot;slug&quot;:&quot;feature-api-score-statistics-players&quot;,&quot;description&quot;:null,&quot;area&quot;:&quot;feature&quot;,&quot;order_num&quot;:9999,&quot;created_at&quot;:&quot;2023-04-11T21:55:42.000000Z&quot;,&quot;updated_at&quot;:&quot;2023-04-11T21:55:42.000000Z&quot;},{&quot;id&quot;:1534,&quot;run_id&quot;:32,&quot;class_name&quot;:&quot;Tests\\Feature\\Api\\SearchCoachesTest&quot;,&quot;title&quot;:&quot;Search Coaches&quot;,&quot;slug&quot;:&quot;feature-api-search-coaches&quot;,&quot;description&quot;:null,&quot;area&quot;:&quot;feature&quot;,&quot;order_num&quot;:9999,&quot;created_at&quot;:&quot;2023-04-11T21:55:43.000000Z&quot;,&quot;updated_at&quot;:&quot;2023-04-11T21:55:43.000000Z&quot;},{&quot;id&quot;:1535,&quot;run_id&quot;:32,&quot;class_name&quot;:&quot;Tests\\Feature\\Api\\SearchPlayersTest&quot;,&quot;title&quot;:&quot;Search Players&quot;,&quot;slug&quot;:&quot;feature-api-search-players&quot;,&quot;description&quot;:null,&quot;area&quot;:&quot;feature&quot;,&quot;order_num&quot;:9999,&quot;created_at&quot;:&quot;2023-04-11T21:55:45.000000Z&quot;,&quot;updated_at&quot;:&quot;2023-04-11T21:55:45.000000Z&quot;},{&quot;id&quot;:1536,&quot;run_id&quot;:32,&quot;class_name&quot;:&quot;Tests\\Feature\\Api\\Sessions\\GetAllSessionByModeTest&quot;,&quot;title&quot;:&quot;Get All Session By Mode&quot;,&quot;slug&quot;:&quot;feature-api-sessions-get-all-session-by-mode&quot;,&quot;description&quot;:null,&quot;area&quot;:&quot;feature&quot;,&quot;order_num&quot;:9999,&quot;created_at&quot;:&quot;2023-04-11T21:55:46.000000Z&quot;,&quot;updated_at&quot;:&quot;2023-04-11T21:55:46.000000Z&quot;},{&quot;id&quot;:1537,&quot;run_id&quot;:32,&quot;class_name&quot;:&quot;Tests\\Feature\\Api\\Sessions\\GetAllSessionByTypeTest&quot;,&quot;title&quot;:&quot;Get All Session By Type&quot;,&quot;slug&quot;:&quot;feature-api-sessions-get-all-session-by-type&quot;,&quot;description&quot;:null,&quot;area&quot;:&quot;feature&quot;,&quot;order_num&quot;:9999,&quot;created_at&quot;:&quot;2023-04-11T21:55:49.000000Z&quot;,&quot;updated_at&quot;:&quot;2023-04-11T21:55:49.000000Z&quot;},{&quot;id&quot;:1538,&quot;run_id&quot;:32,&quot;class_name&quot;:&quot;Tests\\Feature\\Api\\Sessions\\GetBattingStatisticsByPracticeTest&quot;,&quot;title&quot;:&quot;Get Batting Statistics By Practice&quot;,&quot;slug&quot;:&quot;feature-api-sessions-get-batting-statistics-by-practice&quot;,&quot;description&quot;:null,&quot;area&quot;:&quot;feature&quot;,&quot;order_num&quot;:9999,&quot;created_at&quot;:&quot;2023-04-11T21:55:51.000000Z&quot;,&quot;updated_at&quot;:&quot;2023-04-11T21:55:51.000000Z&quot;},{&quot;id&quot;:1539,&quot;run_id&quot;:32,&quot;class_name&quot;:&quot;Tests\\Feature\\Api\\Sessions\\GetBullpenStatisticsByPracticeTest&quot;,&quot;title&quot;:&quot;Get Bullpen Statistics By Practice&quot;,&quot;slug&quot;:&quot;feature-api-sessions-get-bullpen-statistics-by-practice&quot;,&quot;description&quot;:null,&quot;area&quot;:&quot;feature&quot;,&quot;order_num&quot;:9999,&quot;created_at&quot;:&quot;2023-04-11T21:55:52.000000Z&quot;,&quot;updated_at&quot;:&quot;2023-04-11T21:55:52.000000Z&quot;},{&quot;id&quot;:1540,&quot;run_id&quot;:32,&quot;class_name&quot;:&quot;Tests\\Feature\\Api\\Sessions\\GetCageStatisticsByPracticeTest&quot;,&quot;title&quot;:&quot;Get Cage Statistics By Practice&quot;,&quot;slug&quot;:&quot;feature-api-sessions-get-cage-statistics-by-practice&quot;,&quot;description&quot;:null,&quot;area&quot;:&quot;feature&quot;,&quot;order_num&quot;:9999,&quot;created_at&quot;:&quot;2023-04-11T21:55:53.000000Z&quot;,&quot;updated_at&quot;:&quot;2023-04-11T21:55:53.000000Z&quot;},{&quot;id&quot;:1541,&quot;run_id&quot;:32,&quot;class_name&quot;:&quot;Tests\\Feature\\Api\\Sessions\\GetExitVelocityPracticeResultsTest&quot;,&quot;title&quot;:&quot;Get Exit Velocity Practice Results&quot;,&quot;slug&quot;:&quot;feature-api-sessions-get-exit-velocity-practice-results&quot;,&quot;description&quot;:null,&quot;area&quot;:&quot;feature&quot;,&quot;order_num&quot;:9999,&quot;created_at&quot;:&quot;2023-04-11T21:55:54.000000Z&quot;,&quot;updated_at&quot;:&quot;2023-04-11T21:55:54.000000Z&quot;},{&quot;id&quot;:1542,&quot;run_id&quot;:32,&quot;class_name&quot;:&quot;Tests\\Feature\\Api\\Sessions\\GetFullListAllTrainingModeTest&quot;,&quot;title&quot;:&quot;Get Full List All Training Mode&quot;,&quot;slug&quot;:&quot;feature-api-sessions-get-full-list-all-training-mode&quot;,&quot;description&quot;:null,&quot;area&quot;:&quot;feature&quot;,&quot;order_num&quot;:9999,&quot;created_at&quot;:&quot;2023-04-11T21:55:54.000000Z&quot;,&quot;updated_at&quot;:&quot;2023-04-11T21:55:54.000000Z&quot;},{&quot;id&quot;:1543,&quot;run_id&quot;:32,&quot;class_name&quot;:&quot;Tests\\Feature\\Api\\Sessions\\GetLastSessionsTest&quot;,&quot;title&quot;:&quot;Get Last Sessions&quot;,&quot;slug&quot;:&quot;feature-api-sessions-get-last-sessions&quot;,&quot;description&quot;:null,&quot;area&quot;:&quot;feature&quot;,&quot;order_num&quot;:9999,&quot;created_at&quot;:&quot;2023-04-11T21:55:55.000000Z&quot;,&quot;updated_at&quot;:&quot;2023-04-11T21:55:55.000000Z&quot;},{&quot;id&quot;:1544,&quot;run_id&quot;:32,&quot;class_name&quot;:&quot;Tests\\Feature\\Api\\Sessions\\GetListLiveABSessionsTest&quot;,&quot;title&quot;:&quot;Get List Live A B Sessions&quot;,&quot;slug&quot;:&quot;feature-api-sessions-get-list-live-a-b-sessions&quot;,&quot;description&quot;:null,&quot;area&quot;:&quot;feature&quot;,&quot;order_num&quot;:9999,&quot;created_at&quot;:&quot;2023-04-11T21:56:01.000000Z&quot;,&quot;updated_at&quot;:&quot;2023-04-11T21:56:01.000000Z&quot;},{&quot;id&quot;:1545,&quot;run_id&quot;:32,&quot;class_name&quot;:&quot;Tests\\Feature\\Api\\Sessions\\GetLiveABStatisticsByPracticeTest&quot;,&quot;title&quot;:&quot;Get Live A B Statistics By Practice&quot;,&quot;slug&quot;:&quot;feature-api-sessions-get-live-a-b-statistics-by-practice&quot;,&quot;description&quot;:null,&quot;area&quot;:&quot;feature&quot;,&quot;order_num&quot;:9999,&quot;created_at&quot;:&quot;2023-04-11T21:56:02.000000Z&quot;,&quot;updated_at&quot;:&quot;2023-04-11T21:56:02.000000Z&quot;},{&quot;id&quot;:1546,&quot;run_id&quot;:32,&quot;class_name&quot;:&quot;Tests\\Feature\\Api\\Sessions\\GetLongTossPracticeResultsTest&quot;,&quot;title&quot;:&quot;Get Long Toss Practice Results&quot;,&quot;slug&quot;:&quot;feature-api-sessions-get-long-toss-practice-results&quot;,&quot;description&quot;:null,&quot;area&quot;:&quot;feature&quot;,&quot;order_num&quot;:9999,&quot;created_at&quot;:&quot;2023-04-11T21:56:03.000000Z&quot;,&quot;updated_at&quot;:&quot;2023-04-11T21:56:03.000000Z&quot;},{&quot;id&quot;:1547,&quot;run_id&quot;:32,&quot;class_name&quot;:&quot;Tests\\Feature\\Api\\Sessions\\GetSessionByModeTest&quot;,&quot;title&quot;:&quot;Get Session By Mode&quot;,&quot;slug&quot;:&quot;feature-api-sessions-get-session-by-mode&quot;,&quot;description&quot;:null,&quot;area&quot;:&quot;feature&quot;,&quot;order_num&quot;:9999,&quot;created_at&quot;:&quot;2023-04-11T21:56:04.000000Z&quot;,&quot;updated_at&quot;:&quot;2023-04-11T21:56:04.000000Z&quot;},{&quot;id&quot;:1548,&quot;run_id&quot;:32,&quot;class_name&quot;:&quot;Tests\\Feature\\Api\\Sessions\\GetSessionByTypeTest&quot;,&quot;title&quot;:&quot;Get Session By Type&quot;,&quot;slug&quot;:&quot;feature-api-sessions-get-session-by-type&quot;,&quot;description&quot;:null,&quot;area&quot;:&quot;feature&quot;,&quot;order_num&quot;:9999,&quot;created_at&quot;:&quot;2023-04-11T21:56:07.000000Z&quot;,&quot;updated_at&quot;:&quot;2023-04-11T21:56:07.000000Z&quot;},{&quot;id&quot;:1549,&quot;run_id&quot;:32,&quot;class_name&quot;:&quot;Tests\\Feature\\Api\\Sessions\\GetWeightBallPracticeResultsTest&quot;,&quot;title&quot;:&quot;Get Weight Ball Practice Results&quot;,&quot;slug&quot;:&quot;feature-api-sessions-get-weight-ball-practice-results&quot;,&quot;description&quot;:null,&quot;area&quot;:&quot;feature&quot;,&quot;order_num&quot;:9999,&quot;created_at&quot;:&quot;2023-04-11T21:56:11.000000Z&quot;,&quot;updated_at&quot;:&quot;2023-04-11T21:56:11.000000Z&quot;},{&quot;id&quot;:1550,&quot;run_id&quot;:32,&quot;class_name&quot;:&quot;Tests\\Feature\\Api\\Trainig\\AddNewLiveABSessionTest&quot;,&quot;title&quot;:&quot;Add New Live A B Session&quot;,&quot;slug&quot;:&quot;feature-api-trainig-add-new-live-a-b-session&quot;,&quot;description&quot;:null,&quot;area&quot;:&quot;feature&quot;,&quot;order_num&quot;:9999,&quot;created_at&quot;:&quot;2023-04-11T21:56:11.000000Z&quot;,&quot;updated_at&quot;:&quot;2023-04-11T21:56:11.000000Z&quot;},{&quot;id&quot;:1551,&quot;run_id&quot;:32,&quot;class_name&quot;:&quot;Tests\\Feature\\Api\\Trainig\\AddNewSessionTest&quot;,&quot;title&quot;:&quot;Add New Session&quot;,&quot;slug&quot;:&quot;feature-api-trainig-add-new-session&quot;,&quot;description&quot;:null,&quot;area&quot;:&quot;feature&quot;,&quot;order_num&quot;:9999,&quot;created_at&quot;:&quot;2023-04-11T21:56:12.000000Z&quot;,&quot;updated_at&quot;:&quot;2023-04-11T21:56:12.000000Z&quot;},{&quot;id&quot;:1552,&quot;run_id&quot;:32,&quot;class_name&quot;:&quot;Tests\\Feature\\Api\\Trainig\\DeletePracticeTest&quot;,&quot;title&quot;:&quot;Delete Practice&quot;,&quot;slug&quot;:&quot;feature-api-trainig-delete-practice&quot;,&quot;description&quot;:null,&quot;area&quot;:&quot;feature&quot;,&quot;order_num&quot;:9999,&quot;created_at&quot;:&quot;2023-04-11T21:56:13.000000Z&quot;,&quot;updated_at&quot;:&quot;2023-04-11T21:56:13.000000Z&quot;},{&quot;id&quot;:1553,&quot;run_id&quot;:32,&quot;class_name&quot;:&quot;Tests\\Feature\\Api\\Trainig\\FinishPracticeTest&quot;,&quot;title&quot;:&quot;Finish Practice&quot;,&quot;slug&quot;:&quot;feature-api-trainig-finish-practice&quot;,&quot;description&quot;:null,&quot;area&quot;:&quot;feature&quot;,&quot;order_num&quot;:9999,&quot;created_at&quot;:&quot;2023-04-11T21:56:14.000000Z&quot;,&quot;updated_at&quot;:&quot;2023-04-11T21:56:14.000000Z&quot;},{&quot;id&quot;:1554,&quot;run_id&quot;:32,&quot;class_name&quot;:&quot;Tests\\Feature\\Api\\Trainig\\GetTrainingSessionTest&quot;,&quot;title&quot;:&quot;Get Training Session&quot;,&quot;slug&quot;:&quot;feature-api-trainig-get-training-session&quot;,&quot;description&quot;:null,&quot;area&quot;:&quot;feature&quot;,&quot;order_num&quot;:9999,&quot;created_at&quot;:&quot;2023-04-11T21:56:15.000000Z&quot;,&quot;updated_at&quot;:&quot;2023-04-11T21:56:15.000000Z&quot;},{&quot;id&quot;:1555,&quot;run_id&quot;:32,&quot;class_name&quot;:&quot;Tests\\Feature\\Api\\Trainig\\Result\\BattingResultPracticeTest&quot;,&quot;title&quot;:&quot;Batting Result Practice&quot;,&quot;slug&quot;:&quot;feature-api-trainig-result-batting-result-practice&quot;,&quot;description&quot;:null,&quot;area&quot;:&quot;feature&quot;,&quot;order_num&quot;:9999,&quot;created_at&quot;:&quot;2023-04-11T21:56:16.000000Z&quot;,&quot;updated_at&quot;:&quot;2023-04-11T21:56:16.000000Z&quot;},{&quot;id&quot;:1556,&quot;run_id&quot;:32,&quot;class_name&quot;:&quot;Tests\\Feature\\Api\\Trainig\\Result\\BullpenResultPracticeTest&quot;,&quot;title&quot;:&quot;Bullpen Result Practice&quot;,&quot;slug&quot;:&quot;feature-api-trainig-result-bullpen-result-practice&quot;,&quot;description&quot;:null,&quot;area&quot;:&quot;feature&quot;,&quot;order_num&quot;:9999,&quot;created_at&quot;:&quot;2023-04-11T21:56:18.000000Z&quot;,&quot;updated_at&quot;:&quot;2023-04-11T21:56:18.000000Z&quot;},{&quot;id&quot;:1557,&quot;run_id&quot;:32,&quot;class_name&quot;:&quot;Tests\\Feature\\Api\\Trainig\\Result\\CageResultPracticeTest&quot;,&quot;title&quot;:&quot;Cage Result Practice&quot;,&quot;slug&quot;:&quot;feature-api-trainig-result-cage-result-practice&quot;,&quot;description&quot;:null,&quot;area&quot;:&quot;feature&quot;,&quot;order_num&quot;:9999,&quot;created_at&quot;:&quot;2023-04-11T21:56:18.000000Z&quot;,&quot;updated_at&quot;:&quot;2023-04-11T21:56:18.000000Z&quot;},{&quot;id&quot;:1558,&quot;run_id&quot;:32,&quot;class_name&quot;:&quot;Tests\\Feature\\Api\\Trainig\\Result\\ExitVelocityResultPracticeTest&quot;,&quot;title&quot;:&quot;Exit Velocity Result Practice&quot;,&quot;slug&quot;:&quot;feature-api-trainig-result-exit-velocity-result-practice&quot;,&quot;description&quot;:null,&quot;area&quot;:&quot;feature&quot;,&quot;order_num&quot;:9999,&quot;created_at&quot;:&quot;2023-04-11T21:56:19.000000Z&quot;,&quot;updated_at&quot;:&quot;2023-04-11T21:56:19.000000Z&quot;},{&quot;id&quot;:1559,&quot;run_id&quot;:32,&quot;class_name&quot;:&quot;Tests\\Feature\\Api\\Trainig\\Result\\LiveABResultPracticeTest&quot;,&quot;title&quot;:&quot;Live A B Result Practice&quot;,&quot;slug&quot;:&quot;feature-api-trainig-result-live-a-b-result-practice&quot;,&quot;description&quot;:null,&quot;area&quot;:&quot;feature&quot;,&quot;order_num&quot;:9999,&quot;created_at&quot;:&quot;2023-04-11T21:56:19.000000Z&quot;,&quot;updated_at&quot;:&quot;2023-04-11T21:56:19.000000Z&quot;},{&quot;id&quot;:1560,&quot;run_id&quot;:32,&quot;class_name&quot;:&quot;Tests\\Feature\\Api\\Trainig\\Result\\LongTossResultPracticeTest&quot;,&quot;title&quot;:&quot;Long Toss Result Practice&quot;,&quot;slug&quot;:&quot;feature-api-trainig-result-long-toss-result-practice&quot;,&quot;description&quot;:null,&quot;area&quot;:&quot;feature&quot;,&quot;order_num&quot;:9999,&quot;created_at&quot;:&quot;2023-04-11T21:56:21.000000Z&quot;,&quot;updated_at&quot;:&quot;2023-04-11T21:56:21.000000Z&quot;},{&quot;id&quot;:1561,&quot;run_id&quot;:32,&quot;class_name&quot;:&quot;Tests\\Feature\\Api\\Trainig\\Result\\WeightBallResultPracticeTest&quot;,&quot;title&quot;:&quot;Weight Ball Result Practice&quot;,&quot;slug&quot;:&quot;feature-api-trainig-result-weight-ball-result-practice&quot;,&quot;description&quot;:null,&quot;area&quot;:&quot;feature&quot;,&quot;order_num&quot;:9999,&quot;created_at&quot;:&quot;2023-04-11T21:56:21.000000Z&quot;,&quot;updated_at&quot;:&quot;2023-04-11T21:56:21.000000Z&quot;}]}" class="hidden md:flex relative flex-1"
+     x-data='{
+         open: true,
+         results: [],
+         index: {}
+    }'
+     x-on:data-loaded="index = $event.detail"
+     x-init="
+        fetch('https://fungometrics-api-doc.surge.sh/search.json')
+            .then(response => response.json().then(response => { $dispatch('data-loaded', response.items) }))
+        ">
+    <input
+        x-on:input.debounce="
+            results = index.filter(el => `${el.title} ${el.section}`.toLowerCase().includes($event.target.value.toLowerCase())).slice(0, 5);
+            open = true;"
+        class="bg-gray-900 w-full text-sm placeholder-gray-300 focus:placeholder-gray-600 text-gray-300 rounded-md focus:outline-none focus:bg-gray-100 focus:text-gray-800 px-3 py-3"
+        placeholder="Search"
+        type="text"
+        role="search"
+        name="Search">
+    <div x-cloak x-ref="dropdown" x-show-="open" x-on:click.away="open = false"class="absolute block w-full my-1">
+        <ul class="origin-top-right bg-white rounded-md shadow-md block divide-y divide-gray-300 overflow-hidden">
+            <template x-for="(item, index) in results" :key="index">
+                <li>
+                    <a x-on:click="open = false;" x-bind:href="item.url"
+                       class="block text-sm px-3 py-3 text-gray-700 hover:bg-gray-100">
+                        <span class="font-semibold block" x-text="item.section"></span>
+                        <span x-text="item.title"></span>
+                    </a>
+                </li>
+            </template>
+        </ul>
+    </div>
+</div>
+                                                    <div class="ml-4 flex items-center md:ml-6">
+                                            <div class="text-gray-200 font-light px-4 flex justify-center">
+                            <strong>develop</strong>
+                                                        360ae8b
+                        </div>
+                                        <a href="https://github.com/StydeNet/enlighten"
+                       class="text-gray-100 hover:text-gray-500 focus:outline-none" aria-label="Notifications">
+                        <svg class="h-8 w-8" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-4.466 19.59c-.405.078-.534-.171-.534-.384v-2.195c0-.747-.262-1.233-.55-1.481 1.782-.198 3.654-.875 3.654-3.947 0-.874-.312-1.588-.823-2.147.082-.202.356-1.016-.079-2.117 0 0-.671-.215-2.198.82-.64-.18-1.324-.267-2.004-.271-.68.003-1.364.091-2.003.269-1.528-1.035-2.2-.82-2.2-.82-.434 1.102-.16 1.915-.077 2.118-.512.56-.824 1.273-.824 2.147 0 3.064 1.867 3.751 3.645 3.954-.229.2-.436.552-.508 1.07-.457.204-1.614.557-2.328-.666 0 0-.423-.768-1.227-.825 0 0-.78-.01-.055.487 0 0 .525.246.889 1.17 0 0 .463 1.428 2.688.944v1.489c0 .211-.129.459-.528.385-3.18-1.057-5.472-4.056-5.472-7.59 0-4.419 3.582-8 8-8s8 3.581 8 8c0 3.533-2.289 6.531-5.466 7.59z"/></svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <main class="flex-1 relative overflow-y-auto focus:outline-none bg-gray-900" tabindex="0">
+            <span id="top"></span>
+            <div class="pt-2 pb-6">
+                <div class="max-w-7xl mx-auto px-4">
+                    <ul class="flex space-x-2 mt-4">
+            <li>
+            <a href="https://fungometrics-api-doc.surge.sh/areas/feature.html" class="text-gray-500 hover:text-gray-300 transition-all ease-in-out duration-100 flex items-center">
+                Feature
+                                <svg class="w-4 h-4 ml-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                            </a>
+        </li>
+            <li>
+            <a href="https://fungometrics-api-doc.surge.sh/feature-api-trainig-add-new-session.html" class="text-gray-500 hover:text-gray-300 transition-all ease-in-out duration-100 flex items-center">
+                Add New Session
+                            </a>
+        </li>
+    </ul>
+                     <div class="flex items-center justify-center space-x-4">
+                        <h3 class="text-gray-100 text-xl mt-6 mb-4 pb-4 w-full border-b border-gray-700"><div class="flex">
+            <span class="text-success-500 items-center text-sm justify-center rounded-lg flex">
+            <svg class="w-8 h-8 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+    </span>
+            Add new session training type cage ok
+                    </div></h3>
+                    </div>
+                    <div x-data="{active: 'requests'}" class="flex flex-col h-full py-2 px-2">
+                    <div class="flex space-x-4 mb-4 bg-gray-800">
+                                                        <button
+                            x-on:click="active='requests'"
+                            x-bind:class="{
+                                'border-teal-300': (active === 'requests'),
+                                'border-gray-800': (active !== 'requests')
+                            }"
+                            class="mx-2 text-gray-100 px-2 py-3 border-b-2 text-sm focus:outline-none hover:border-teal-500 transition-all ease-in-out duration-100"
+                    >Requests</button>
+                                                                            <button
+                            x-on:click="active='database'"
+                            x-bind:class="{
+                                'border-teal-300': (active === 'database'),
+                                'border-gray-800': (active !== 'database')
+                            }"
+                            class="mx-2 text-gray-100 px-2 py-3 border-b-2 text-sm focus:outline-none hover:border-teal-500 transition-all ease-in-out duration-100"
+                    >Database</button>
+                                                                                    </div>
+        
+        <div class="w-full h-full">
+                                                 <div x-cloak x-show="active === 'requests' " class="h-full">
+                         <div x-data="{active: 'response_8036'}" class="flex flex-col h-full">
+        
+        <div class="w-full h-full">
+                                                 <div x-cloak x-show="active === 'response_8036' " class="h-full">
+                         <div class="grid md:grid-cols-2 space-y-8 md:space-y-0 md:space-x-6 w-full h-full">
+                        <div>
+                            <div class="bg-gray-800 rounded-md overflow-hidden">
+    <span class="block w-full bg-gray-700 px-4 py-2">
+        <h3 class="text-base text-gray-300">Request</h3>
+    </span>
+    <div>
+    
+    <table class="bg-gray-800 p-4 rounded-lg text-gray-100 my-4">
+                    <tr>
+                <td class="font-thin whitespace-no-wrap text-gray-200 px-4">Method: </td>
+                <td class="font-thin break-all text-teal-300 pr-4"
+                > POST</td>
+            </tr>
+                    <tr>
+                <td class="font-thin whitespace-no-wrap text-gray-200 px-4">Route: </td>
+                <td class="font-thin break-all text-teal-300 pr-4"
+                > api/training</td>
+            </tr>
+                    <tr>
+                <td class="font-thin whitespace-no-wrap text-gray-200 px-4">Example: </td>
+                <td class="font-thin break-all text-teal-300 pr-4"
+                > api/training</td>
+            </tr>
+            </table>
+</div>
+
+    
+            <table class="bg-gray-800 p-4 overflow-hidden text-gray-100 w-full">
+    <thead>
+        <tr class="bg-gray-500">
+            <th class="py-2 text-sm text-left text-gray-800 px-4 text-sm font-normal">Input</th>
+            <th class="py-2 text-sm text-left text-gray-800 px-4 text-sm font-normal">Value</th>
+        </tr>
+    </thead>
+    <tbody>
+                    <tr>
+                <td class="px-4 py-2 font-thin text-gray-200">team</td>
+                <td class="px-4 py-2 font-thin text-teal-300 break-all">
+                                            f3ee6042-74d2-4c2d-9ea9-e34bed6126b3
+                                    </td>
+            </tr>
+                    <tr>
+                <td class="px-4 py-2 font-thin text-gray-200">type</td>
+                <td class="px-4 py-2 font-thin text-teal-300 break-all">
+                                            C
+                                    </td>
+            </tr>
+                    <tr>
+                <td class="px-4 py-2 font-thin text-gray-200">note</td>
+                <td class="px-4 py-2 font-thin text-teal-300 break-all">
+                                            Quod at sunt tempora quis aliquam sunt et. Quas quis enim enim nemo aliquam expedita aut similique. Quidem nobis aliquam qui sed omnis officiis qui.
+                                    </td>
+            </tr>
+                    <tr>
+                <td class="px-4 py-2 font-thin text-gray-200">cage</td>
+                <td class="px-4 py-2 font-thin text-teal-300 break-all">
+                                            {
+    &quot;height&quot;: {
+        &quot;ft&quot;: 18,
+        &quot;inch&quot;: 3
+    },
+    &quot;width&quot;: {
+        &quot;ft&quot;: 20,
+        &quot;inch&quot;: 4
+    },
+    &quot;length&quot;: {
+        &quot;ft&quot;: 14,
+        &quot;inch&quot;: 3
+    }
+}
+                                    </td>
+            </tr>
+                    <tr>
+                <td class="px-4 py-2 font-thin text-gray-200">players</td>
+                <td class="px-4 py-2 font-thin text-teal-300 break-all">
+                                            [
+    {
+        &quot;id&quot;: &quot;b9d9aa66-cccc-4f0f-b5a6-2041efe0ac4e&quot;,
+        &quot;sort&quot;: 1
+    },
+    {
+        &quot;id&quot;: &quot;abf8f34b-6e6a-4983-b0da-3febef6ec045&quot;,
+        &quot;sort&quot;: 2
+    },
+    {
+        &quot;id&quot;: &quot;e3390764-2f5b-45e4-ba9a-6589398f6812&quot;,
+        &quot;sort&quot;: 3
+    },
+    {
+        &quot;id&quot;: &quot;97617ac6-0092-497a-aa13-38375ca00072&quot;,
+        &quot;sort&quot;: 4
+    }
+]
+                                    </td>
+            </tr>
+            </tbody>
+</table>
+    
+            <div>
+            <span class="block bg-gray-500 py-2 text-sm text-left text-gray-800 px-4 text-sm font-normal w-full"
+>Request Headers</span>
+    
+    <table class="bg-gray-800 p-4 rounded-lg text-gray-100 my-4">
+                    <tr>
+                <td class="font-thin whitespace-no-wrap text-gray-200 px-4">host: </td>
+                <td class="font-thin break-all text-teal-300 pr-4"
+                > 127.0.0.1:8000</td>
+            </tr>
+                    <tr>
+                <td class="font-thin whitespace-no-wrap text-gray-200 px-4">user-agent: </td>
+                <td class="font-thin break-all text-teal-300 pr-4"
+                > Symfony</td>
+            </tr>
+                    <tr>
+                <td class="font-thin whitespace-no-wrap text-gray-200 px-4">accept: </td>
+                <td class="font-thin break-all text-teal-300 pr-4"
+                > application/json</td>
+            </tr>
+                    <tr>
+                <td class="font-thin whitespace-no-wrap text-gray-200 px-4">accept-language: </td>
+                <td class="font-thin break-all text-teal-300 pr-4"
+                > en-us,en;q=0.5</td>
+            </tr>
+                    <tr>
+                <td class="font-thin whitespace-no-wrap text-gray-200 px-4">accept-charset: </td>
+                <td class="font-thin break-all text-teal-300 pr-4"
+                > ISO-8859-1,utf-8;q=0.7,*;q=0.7</td>
+            </tr>
+                    <tr>
+                <td class="font-thin whitespace-no-wrap text-gray-200 px-4">content-length: </td>
+                <td class="font-thin break-all text-teal-300 pr-4"
+                > 540</td>
+            </tr>
+                    <tr>
+                <td class="font-thin whitespace-no-wrap text-gray-200 px-4">content-type: </td>
+                <td class="font-thin break-all text-teal-300 pr-4"
+                > application/json</td>
+            </tr>
+            </table>
+</div>
+</div>
+                            <span class="mb-8 w-full block"></span>
+
+                            <div class="bg-gray-800 rounded-md overflow-hidden">
+    <span class="block w-full bg-gray-700 px-4 py-2">
+        <h3 class="text-base text-gray-300">Response</h3>
+    </span>
+    <div class="p-4 space-x-4">
+        <span class="p-1 bg-default-200 text-default-700">201</span>
+        <span class="text-gray-100">JSON</span>
+    </div>
+
+            <div>
+            <span class="block bg-gray-500 py-2 text-sm text-left text-gray-800 px-4 text-sm font-normal w-full"
+>Response Headers</span>
+    
+    <table class="bg-gray-800 p-4 rounded-lg text-gray-100 my-4">
+                    <tr>
+                <td class="font-thin whitespace-no-wrap text-gray-200 px-4">cache-control: </td>
+                <td class="font-thin break-all text-teal-300 pr-4"
+                > no-cache, private</td>
+            </tr>
+                    <tr>
+                <td class="font-thin whitespace-no-wrap text-gray-200 px-4">date: </td>
+                <td class="font-thin break-all text-teal-300 pr-4"
+                > Tue, 11 Apr 2023 21:56:13 GMT</td>
+            </tr>
+                    <tr>
+                <td class="font-thin whitespace-no-wrap text-gray-200 px-4">content-type: </td>
+                <td class="font-thin break-all text-teal-300 pr-4"
+                > application/json</td>
+            </tr>
+                    <tr>
+                <td class="font-thin whitespace-no-wrap text-gray-200 px-4">x-ratelimit-limit: </td>
+                <td class="font-thin break-all text-teal-300 pr-4"
+                > 60</td>
+            </tr>
+                    <tr>
+                <td class="font-thin whitespace-no-wrap text-gray-200 px-4">x-ratelimit-remaining: </td>
+                <td class="font-thin break-all text-teal-300 pr-4"
+                > 59</td>
+            </tr>
+            </table>
+</div>
+</div>
+                            <span class="mb-8 w-full block"></span>
+
+                                                    </div>
+                        <div class="h-full relative">
+                                                            <div class="h-full">
+            <div >
+    <pre style="margin:0;"
+         class="h-full w-full bg-gray-300 rounded-lg overflow-hidden"
+    ><code class="language-json">{
+    &quot;code&quot;: &quot;006&quot;,
+    &quot;message&quot;: &quot;add new session training&quot;,
+    &quot;status&quot;: &quot;success&quot;,
+    &quot;data&quot;: {
+        &quot;id&quot;: &quot;daf15699-abc2-43af-816b-ebd1ea567e2d&quot;,
+        &quot;note&quot;: &quot;Quod at sunt tempora quis aliquam sunt et. Quas quis enim enim nemo aliquam expedita aut similique. Quidem nobis aliquam qui sed omnis officiis qui.&quot;,
+        &quot;is_completed&quot;: null,
+        &quot;start&quot;: &quot;2023-04-11T21:56:13.376240Z&quot;,
+        &quot;finish&quot;: null,
+        &quot;end_note&quot;: null,
+        &quot;type&quot;: &quot;C&quot;,
+        &quot;modes&quot;: &quot;HP&quot;,
+        &quot;players&quot;: [
+            {
+                &quot;id&quot;: &quot;b9d9aa66-cccc-4f0f-b5a6-2041efe0ac4e&quot;,
+                &quot;sort&quot;: 1,
+                &quot;name&quot;: {
+                    &quot;first&quot;: &quot;Jalen&quot;,
+                    &quot;last&quot;: &quot;Conroy&quot;,
+                    &quot;full&quot;: &quot;Jalen Conroy&quot;
+                },
+                &quot;picture&quot;: &quot;https:\/\/via.placeholder.com\/640x480.png\/00dd55?text=nobis&quot;,
+                &quot;shirt_number&quot;: 9,
+                &quot;body&quot;: {
+                    &quot;ft&quot;: 7,
+                    &quot;inch&quot;: 7,
+                    &quot;full_height&quot;: &quot;7.7&quot;
+                }
+            },
+            {
+                &quot;id&quot;: &quot;abf8f34b-6e6a-4983-b0da-3febef6ec045&quot;,
+                &quot;sort&quot;: 2,
+                &quot;name&quot;: {
+                    &quot;first&quot;: &quot;Oscar&quot;,
+                    &quot;last&quot;: &quot;Sauer&quot;,
+                    &quot;full&quot;: &quot;Oscar Sauer&quot;
+                },
+                &quot;picture&quot;: &quot;https:\/\/via.placeholder.com\/640x480.png\/00aaaa?text=incidunt&quot;,
+                &quot;shirt_number&quot;: 4,
+                &quot;body&quot;: {
+                    &quot;ft&quot;: 3,
+                    &quot;inch&quot;: 0,
+                    &quot;full_height&quot;: &quot;3.0&quot;
+                }
+            },
+            {
+                &quot;id&quot;: &quot;e3390764-2f5b-45e4-ba9a-6589398f6812&quot;,
+                &quot;sort&quot;: 3,
+                &quot;name&quot;: {
+                    &quot;first&quot;: &quot;Ayana&quot;,
+                    &quot;last&quot;: &quot;Hyatt&quot;,
+                    &quot;full&quot;: &quot;Ayana Hyatt&quot;
+                },
+                &quot;picture&quot;: &quot;https:\/\/via.placeholder.com\/640x480.png\/00ff44?text=in&quot;,
+                &quot;shirt_number&quot;: 0,
+                &quot;body&quot;: {
+                    &quot;ft&quot;: 4,
+                    &quot;inch&quot;: 8,
+                    &quot;full_height&quot;: &quot;4.8&quot;
+                }
+            },
+            {
+                &quot;id&quot;: &quot;97617ac6-0092-497a-aa13-38375ca00072&quot;,
+                &quot;sort&quot;: 4,
+                &quot;name&quot;: {
+                    &quot;first&quot;: &quot;Tomas&quot;,
+                    &quot;last&quot;: &quot;Senger&quot;,
+                    &quot;full&quot;: &quot;Tomas Senger&quot;
+                },
+                &quot;picture&quot;: &quot;https:\/\/via.placeholder.com\/640x480.png\/008899?text=nobis&quot;,
+                &quot;shirt_number&quot;: 3,
+                &quot;body&quot;: {
+                    &quot;ft&quot;: 5,
+                    &quot;inch&quot;: 4,
+                    &quot;full_height&quot;: &quot;5.4&quot;
+                }
+            }
+        ],
+        &quot;cage_data&quot;: {
+            &quot;id&quot;: &quot;5d328379-e39a-4078-8f71-0dce8904fdbe&quot;,
+            &quot;width&quot;: {
+                &quot;ft&quot;: 20,
+                &quot;inch&quot;: 4,
+                &quot;complete&quot;: &quot;20.4&quot;
+            },
+            &quot;height&quot;: {
+                &quot;ft&quot;: 18,
+                &quot;inch&quot;: 3,
+                &quot;complete&quot;: &quot;18.3&quot;
+            },
+            &quot;length&quot;: {
+                &quot;ft&quot;: 14,
+                &quot;inch&quot;: 3,
+                &quot;complete&quot;: &quot;14.3&quot;
+            }
+        }
+    }
+}</code></pre>
+</div>    </div>
+                                                    </div>
+                    </div>
+                     </div>
+                                    </div>
+</div>
+                     </div>
+                                                                 <div x-cloak x-show="active === 'database' " class="h-full">
+                         <div x-data="{
+            open: 0
+        }">
+        <label x-on:click="open = !open"  class="flex items-center space-x-2 cursor-pointer text-gray-300 hover:text-gray-100 mb-6 mt-2 text-xl">
+            <span>
+                                    Test Queries
+                            </span>
+            <svg x-cloak x-show="open" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7"></path></svg>
+            <svg x-cloak x-show="!open" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+        </label>
+                    <div class="grid grid-cols-1 gap-4 mb-8" x-cloak x-show="open">
+                <div class="flex flex-col space-y-4">
+                                            <div class="bg-gray-800 rounded-md overflow-hidden">
+    <span class="block w-full bg-gray-700 px-4 py-2">
+        <h3 class="text-base text-gray-300">Time: 1.14</h3>
+    </span>
+    <div >
+    <pre style="margin:0;"
+         class="h-full w-full bg-gray-300 rounded-lg overflow-hidden"
+    ><code class="language-sql">insert into `users` (`id`, `phone`, `type`, `email`, `status`, `password`, `updated_at`, `created_at`) values (?, ?, ?, ?, ?, ?, ?, ?)</code></pre>
+</div>                                                            <div>
+            <span class="block bg-gray-500 py-2 text-sm text-left text-gray-800 px-4 text-sm font-normal w-full"
+>Bindings</span>
+    
+    <table class="bg-gray-800 p-4 rounded-lg text-gray-100 my-4">
+                    <tr>
+                <td class="font-thin whitespace-no-wrap text-gray-200 px-4">0: </td>
+                <td class="font-thin break-all text-teal-300 pr-4"
+                > 3d809409-c1dd-4be7-9761-f4e8a5bf7c01</td>
+            </tr>
+                    <tr>
+                <td class="font-thin whitespace-no-wrap text-gray-200 px-4">1: </td>
+                <td class="font-thin break-all text-teal-300 pr-4"
+                > (510) 857-4589</td>
+            </tr>
+                    <tr>
+                <td class="font-thin whitespace-no-wrap text-gray-200 px-4">2: </td>
+                <td class="font-thin break-all text-teal-300 pr-4"
+                > player</td>
+            </tr>
+                    <tr>
+                <td class="font-thin whitespace-no-wrap text-gray-200 px-4">3: </td>
+                <td class="font-thin break-all text-teal-300 pr-4"
+                > kristian.rogahn@example.net</td>
+            </tr>
+                    <tr>
+                <td class="font-thin whitespace-no-wrap text-gray-200 px-4">4: </td>
+                <td class="font-thin break-all text-teal-300 pr-4"
+                > 1</td>
+            </tr>
+                    <tr>
+                <td class="font-thin whitespace-no-wrap text-gray-200 px-4">5: </td>
+                <td class="font-thin break-all text-teal-300 pr-4"
+                > IYlQyMRb_g0bw<J4u</td>
+            </tr>
+                    <tr>
+                <td class="font-thin whitespace-no-wrap text-gray-200 px-4">6: </td>
+                <td class="font-thin break-all text-teal-300 pr-4"
+                > 2023-04-11 15:56:13</td>
+            </tr>
+                    <tr>
+                <td class="font-thin whitespace-no-wrap text-gray-200 px-4">7: </td>
+                <td class="font-thin break-all text-teal-300 pr-4"
+                > 2023-04-11 15:56:13</td>
+            </tr>
+            </table>
+</div>
+</div>
+                                            <div class="bg-gray-800 rounded-md overflow-hidden">
+    <span class="block w-full bg-gray-700 px-4 py-2">
+        <h3 class="text-base text-gray-300">Time: 3.6</h3>
+    </span>
+    <div >
+    <pre style="margin:0;"
+         class="h-full w-full bg-gray-300 rounded-lg overflow-hidden"
+    ><code class="language-sql">insert into `teams` (`name`, `logo`, `state`, `zip`, `id`, `updated_at`, `created_at`) values (?, ?, ?, ?, ?, ?, ?)</code></pre>
+</div>                                                            <div>
+            <span class="block bg-gray-500 py-2 text-sm text-left text-gray-800 px-4 text-sm font-normal w-full"
+>Bindings</span>
+    
+    <table class="bg-gray-800 p-4 rounded-lg text-gray-100 my-4">
+                    <tr>
+                <td class="font-thin whitespace-no-wrap text-gray-200 px-4">0: </td>
+                <td class="font-thin break-all text-teal-300 pr-4"
+                > aut New Onie</td>
+            </tr>
+                    <tr>
+                <td class="font-thin whitespace-no-wrap text-gray-200 px-4">1: </td>
+                <td class="font-thin break-all text-teal-300 pr-4"
+                > https://via.placeholder.com/640x480.png/0000dd?text=sint</td>
+            </tr>
+                    <tr>
+                <td class="font-thin whitespace-no-wrap text-gray-200 px-4">2: </td>
+                <td class="font-thin break-all text-teal-300 pr-4"
+                > New Hampshire</td>
+            </tr>
+                    <tr>
+                <td class="font-thin whitespace-no-wrap text-gray-200 px-4">3: </td>
+                <td class="font-thin break-all text-teal-300 pr-4"
+                > 44385-2034</td>
+            </tr>
+                    <tr>
+                <td class="font-thin whitespace-no-wrap text-gray-200 px-4">4: </td>
+                <td class="font-thin break-all text-teal-300 pr-4"
+                > f3ee6042-74d2-4c2d-9ea9-e34bed6126b3</td>
+            </tr>
+                    <tr>
+                <td class="font-thin whitespace-no-wrap text-gray-200 px-4">5: </td>
+                <td class="font-thin break-all text-teal-300 pr-4"
+                > 2023-04-11 15:56:13</td>
+            </tr>
+                    <tr>
+                <td class="font-thin whitespace-no-wrap text-gray-200 px-4">6: </td>
+                <td class="font-thin break-all text-teal-300 pr-4"
+                > 2023-04-11 15:56:13</td>
+            </tr>
+            </table>
+</div>
+</div>
+                                            <div class="bg-gray-800 rounded-md overflow-hidden">
+    <span class="block w-full bg-gray-700 px-4 py-2">
+        <h3 class="text-base text-gray-300">Time: 0.54</h3>
+    </span>
+    <div >
+    <pre style="margin:0;"
+         class="h-full w-full bg-gray-300 rounded-lg overflow-hidden"
+    ><code class="language-sql">insert into `users` (`id`, `phone`, `type`, `email`, `status`, `password`, `updated_at`, `created_at`) values (?, ?, ?, ?, ?, ?, ?, ?)</code></pre>
+</div>                                                            <div>
+            <span class="block bg-gray-500 py-2 text-sm text-left text-gray-800 px-4 text-sm font-normal w-full"
+>Bindings</span>
+    
+    <table class="bg-gray-800 p-4 rounded-lg text-gray-100 my-4">
+                    <tr>
+                <td class="font-thin whitespace-no-wrap text-gray-200 px-4">0: </td>
+                <td class="font-thin break-all text-teal-300 pr-4"
+                > b9d9aa66-cccc-4f0f-b5a6-2041efe0ac4e</td>
+            </tr>
+                    <tr>
+                <td class="font-thin whitespace-no-wrap text-gray-200 px-4">1: </td>
+                <td class="font-thin break-all text-teal-300 pr-4"
+                > 757-890-1740</td>
+            </tr>
+                    <tr>
+                <td class="font-thin whitespace-no-wrap text-gray-200 px-4">2: </td>
+                <td class="font-thin break-all text-teal-300 pr-4"
+                > player</td>
+            </tr>
+                    <tr>
+                <td class="font-thin whitespace-no-wrap text-gray-200 px-4">3: </td>
+                <td class="font-thin break-all text-teal-300 pr-4"
+                > violette.leuschke@example.net</td>
+            </tr>
+                    <tr>
+                <td class="font-thin whitespace-no-wrap text-gray-200 px-4">4: </td>
+                <td class="font-thin break-all text-teal-300 pr-4"
+                > 1</td>
+            </tr>
+                    <tr>
+                <td class="font-thin whitespace-no-wrap text-gray-200 px-4">5: </td>
+                <td class="font-thin break-all text-teal-300 pr-4"
+                > d*%E,VYX|zA7Texp</td>
+            </tr>
+                    <tr>
+                <td class="font-thin whitespace-no-wrap text-gray-200 px-4">6: </td>
+                <td class="font-thin break-all text-teal-300 pr-4"
+                > 2023-04-11 15:56:13</td>
+            </tr>
+                    <tr>
+                <td class="font-thin whitespace-no-wrap text-gray-200 px-4">7: </td>
+                <td class="font-thin break-all text-teal-300 pr-4"
+                > 2023-04-11 15:56:13</td>
+            </tr>
+            </table>
+</div>
+</div>
+                                            <div class="bg-gray-800 rounded-md overflow-hidden">
+    <span class="block w-full bg-gray-700 px-4 py-2">
+        <h3 class="text-base text-gray-300">Time: 0.47</h3>
+    </span>
+    <div >
+    <pre style="margin:0;"
+         class="h-full w-full bg-gray-300 rounded-lg overflow-hidden"
+    ><code class="language-sql">insert into `users` (`id`, `phone`, `type`, `email`, `status`, `password`, `updated_at`, `created_at`) values (?, ?, ?, ?, ?, ?, ?, ?)</code></pre>
+</div>                                                            <div>
+            <span class="block bg-gray-500 py-2 text-sm text-left text-gray-800 px-4 text-sm font-normal w-full"
+>Bindings</span>
+    
+    <table class="bg-gray-800 p-4 rounded-lg text-gray-100 my-4">
+                    <tr>
+                <td class="font-thin whitespace-no-wrap text-gray-200 px-4">0: </td>
+                <td class="font-thin break-all text-teal-300 pr-4"
+                > abf8f34b-6e6a-4983-b0da-3febef6ec045</td>
+            </tr>
+                    <tr>
+                <td class="font-thin whitespace-no-wrap text-gray-200 px-4">1: </td>
+                <td class="font-thin break-all text-teal-300 pr-4"
+                > 1-480-641-6547</td>
+            </tr>
+                    <tr>
+                <td class="font-thin whitespace-no-wrap text-gray-200 px-4">2: </td>
+                <td class="font-thin break-all text-teal-300 pr-4"
+                > player</td>
+            </tr>
+                    <tr>
+                <td class="font-thin whitespace-no-wrap text-gray-200 px-4">3: </td>
+                <td class="font-thin break-all text-teal-300 pr-4"
+                > rosella88@example.net</td>
+            </tr>
+                    <tr>
+                <td class="font-thin whitespace-no-wrap text-gray-200 px-4">4: </td>
+                <td class="font-thin break-all text-teal-300 pr-4"
+                > </td>
+            </tr>
+                    <tr>
+                <td class="font-thin whitespace-no-wrap text-gray-200 px-4">5: </td>
+                <td class="font-thin break-all text-teal-300 pr-4"
+                > 'wT$qGYz$y</td>
+            </tr>
+                    <tr>
+                <td class="font-thin whitespace-no-wrap text-gray-200 px-4">6: </td>
+                <td class="font-thin break-all text-teal-300 pr-4"
+                > 2023-04-11 15:56:13</td>
+            </tr>
+                    <tr>
+                <td class="font-thin whitespace-no-wrap text-gray-200 px-4">7: </td>
+                <td class="font-thin break-all text-teal-300 pr-4"
+                > 2023-04-11 15:56:13</td>
+            </tr>
+            </table>
+</div>
+</div>
+                                            <div class="bg-gray-800 rounded-md overflow-hidden">
+    <span class="block w-full bg-gray-700 px-4 py-2">
+        <h3 class="text-base text-gray-300">Time: 0.89</h3>
+    </span>
+    <div >
+    <pre style="margin:0;"
+         class="h-full w-full bg-gray-300 rounded-lg overflow-hidden"
+    ><code class="language-sql">insert into `users` (`id`, `phone`, `type`, `email`, `status`, `password`, `updated_at`, `created_at`) values (?, ?, ?, ?, ?, ?, ?, ?)</code></pre>
+</div>                                                            <div>
+            <span class="block bg-gray-500 py-2 text-sm text-left text-gray-800 px-4 text-sm font-normal w-full"
+>Bindings</span>
+    
+    <table class="bg-gray-800 p-4 rounded-lg text-gray-100 my-4">
+                    <tr>
+                <td class="font-thin whitespace-no-wrap text-gray-200 px-4">0: </td>
+                <td class="font-thin break-all text-teal-300 pr-4"
+                > e3390764-2f5b-45e4-ba9a-6589398f6812</td>
+            </tr>
+                    <tr>
+                <td class="font-thin whitespace-no-wrap text-gray-200 px-4">1: </td>
+                <td class="font-thin break-all text-teal-300 pr-4"
+                > 520-801-8660</td>
+            </tr>
+                    <tr>
+                <td class="font-thin whitespace-no-wrap text-gray-200 px-4">2: </td>
+                <td class="font-thin break-all text-teal-300 pr-4"
+                > player</td>
+            </tr>
+                    <tr>
+                <td class="font-thin whitespace-no-wrap text-gray-200 px-4">3: </td>
+                <td class="font-thin break-all text-teal-300 pr-4"
+                > nyah.murphy@example.org</td>
+            </tr>
+                    <tr>
+                <td class="font-thin whitespace-no-wrap text-gray-200 px-4">4: </td>
+                <td class="font-thin break-all text-teal-300 pr-4"
+                > 1</td>
+            </tr>
+                    <tr>
+                <td class="font-thin whitespace-no-wrap text-gray-200 px-4">5: </td>
+                <td class="font-thin break-all text-teal-300 pr-4"
+                > P5E^D2_X|a}LO=NT</td>
+            </tr>
+                    <tr>
+                <td class="font-thin whitespace-no-wrap text-gray-200 px-4">6: </td>
+                <td class="font-thin break-all text-teal-300 pr-4"
+                > 2023-04-11 15:56:13</td>
+            </tr>
+                    <tr>
+                <td class="font-thin whitespace-no-wrap text-gray-200 px-4">7: </td>
+                <td class="font-thin break-all text-teal-300 pr-4"
+                > 2023-04-11 15:56:13</td>
+            </tr>
+            </table>
+</div>
+</div>
+                                            <div class="bg-gray-800 rounded-md overflow-hidden">
+    <span class="block w-full bg-gray-700 px-4 py-2">
+        <h3 class="text-base text-gray-300">Time: 0.51</h3>
+    </span>
+    <div >
+    <pre style="margin:0;"
+         class="h-full w-full bg-gray-300 rounded-lg overflow-hidden"
+    ><code class="language-sql">insert into `users` (`id`, `phone`, `type`, `email`, `status`, `password`, `updated_at`, `created_at`) values (?, ?, ?, ?, ?, ?, ?, ?)</code></pre>
+</div>                                                            <div>
+            <span class="block bg-gray-500 py-2 text-sm text-left text-gray-800 px-4 text-sm font-normal w-full"
+>Bindings</span>
+    
+    <table class="bg-gray-800 p-4 rounded-lg text-gray-100 my-4">
+                    <tr>
+                <td class="font-thin whitespace-no-wrap text-gray-200 px-4">0: </td>
+                <td class="font-thin break-all text-teal-300 pr-4"
+                > 97617ac6-0092-497a-aa13-38375ca00072</td>
+            </tr>
+                    <tr>
+                <td class="font-thin whitespace-no-wrap text-gray-200 px-4">1: </td>
+                <td class="font-thin break-all text-teal-300 pr-4"
+                > 1-228-608-7554</td>
+            </tr>
+                    <tr>
+                <td class="font-thin whitespace-no-wrap text-gray-200 px-4">2: </td>
+                <td class="font-thin break-all text-teal-300 pr-4"
+                > player</td>
+            </tr>
+                    <tr>
+                <td class="font-thin whitespace-no-wrap text-gray-200 px-4">3: </td>
+                <td class="font-thin break-all text-teal-300 pr-4"
+                > lew.hammes@example.org</td>
+            </tr>
+                    <tr>
+                <td class="font-thin whitespace-no-wrap text-gray-200 px-4">4: </td>
+                <td class="font-thin break-all text-teal-300 pr-4"
+                > 1</td>
+            </tr>
+                    <tr>
+                <td class="font-thin whitespace-no-wrap text-gray-200 px-4">5: </td>
+                <td class="font-thin break-all text-teal-300 pr-4"
+                > qO2yr^LtDzH&v&nDK"</td>
+            </tr>
+                    <tr>
+                <td class="font-thin whitespace-no-wrap text-gray-200 px-4">6: </td>
+                <td class="font-thin break-all text-teal-300 pr-4"
+                > 2023-04-11 15:56:13</td>
+            </tr>
+                    <tr>
+                <td class="font-thin whitespace-no-wrap text-gray-200 px-4">7: </td>
+                <td class="font-thin break-all text-teal-300 pr-4"
+                > 2023-04-11 15:56:13</td>
+            </tr>
+            </table>
+</div>
+</div>
+                                            <div class="bg-gray-800 rounded-md overflow-hidden">
+    <span class="block w-full bg-gray-700 px-4 py-2">
+        <h3 class="text-base text-gray-300">Time: 0.78</h3>
+    </span>
+    <div >
+    <pre style="margin:0;"
+         class="h-full w-full bg-gray-300 rounded-lg overflow-hidden"
+    ><code class="language-sql">insert into `profiles` (`first_name`, `last_name`, `user_id`, `picture`, `city`, `zip`, `state`, `id`, `updated_at`, `created_at`) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)</code></pre>
+</div>                                                            <div>
+            <span class="block bg-gray-500 py-2 text-sm text-left text-gray-800 px-4 text-sm font-normal w-full"
+>Bindings</span>
+    
+    <table class="bg-gray-800 p-4 rounded-lg text-gray-100 my-4">
+                    <tr>
+                <td class="font-thin whitespace-no-wrap text-gray-200 px-4">0: </td>
+                <td class="font-thin break-all text-teal-300 pr-4"
+                > Jalen</td>
+            </tr>
+                    <tr>
+                <td class="font-thin whitespace-no-wrap text-gray-200 px-4">1: </td>
+                <td class="font-thin break-all text-teal-300 pr-4"
+                > Conroy</td>
+            </tr>
+                    <tr>
+                <td class="font-thin whitespace-no-wrap text-gray-200 px-4">2: </td>
+                <td class="font-thin break-all text-teal-300 pr-4"
+                > b9d9aa66-cccc-4f0f-b5a6-2041efe0ac4e</td>
+            </tr>
+                    <tr>
+                <td class="font-thin whitespace-no-wrap text-gray-200 px-4">3: </td>
+                <td class="font-thin break-all text-teal-300 pr-4"
+                > https://via.placeholder.com/640x480.png/00dd55?text=nobis</td>
+            </tr>
+                    <tr>
+                <td class="font-thin whitespace-no-wrap text-gray-200 px-4">4: </td>
+                <td class="font-thin break-all text-teal-300 pr-4"
+                > Port Rickie</td>
+            </tr>
+                    <tr>
+                <td class="font-thin whitespace-no-wrap text-gray-200 px-4">5: </td>
+                <td class="font-thin break-all text-teal-300 pr-4"
+                > 93688</td>
+            </tr>
+                    <tr>
+                <td class="font-thin whitespace-no-wrap text-gray-200 px-4">6: </td>
+                <td class="font-thin break-all text-teal-300 pr-4"
+                > New York</td>
+            </tr>
+                    <tr>
+                <td class="font-thin whitespace-no-wrap text-gray-200 px-4">7: </td>
+                <td class="font-thin break-all text-teal-300 pr-4"
+                > be5fc703-06cc-468a-8259-cf02687bdb75</td>
+            </tr>
+                    <tr>
+                <td class="font-thin whitespace-no-wrap text-gray-200 px-4">8: </td>
+                <td class="font-thin break-all text-teal-300 pr-4"
+                > 2023-04-11 15:56:13</td>
+            </tr>
+                    <tr>
+                <td class="font-thin whitespace-no-wrap text-gray-200 px-4">9: </td>
+                <td class="font-thin break-all text-teal-300 pr-4"
+                > 2023-04-11 15:56:13</td>
+            </tr>
+            </table>
+</div>
+</div>
+                                            <div class="bg-gray-800 rounded-md overflow-hidden">
+    <span class="block w-full bg-gray-700 px-4 py-2">
+        <h3 class="text-base text-gray-300">Time: 0.84</h3>
+    </span>
+    <div >
+    <pre style="margin:0;"
+         class="h-full w-full bg-gray-300 rounded-lg overflow-hidden"
+    ><code class="language-sql">insert into `players` (`height_in_ft`, `height_in_inch`, `weight`, `hit_side`, `throw_side`, `number_in_shirt`, `born_date`, `user_id`, `id`, `updated_at`, `created_at`) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)</code></pre>
+</div>                                                            <div>
+            <span class="block bg-gray-500 py-2 text-sm text-left text-gray-800 px-4 text-sm font-normal w-full"
+>Bindings</span>
+    
+    <table class="bg-gray-800 p-4 rounded-lg text-gray-100 my-4">
+                    <tr>
+                <td class="font-thin whitespace-no-wrap text-gray-200 px-4">0: </td>
+                <td class="font-thin break-all text-teal-300 pr-4"
+                > 7</td>
+            </tr>
+                    <tr>
+                <td class="font-thin whitespace-no-wrap text-gray-200 px-4">1: </td>
+                <td class="font-thin break-all text-teal-300 pr-4"
+                > 7</td>
+            </tr>
+                    <tr>
+                <td class="font-thin whitespace-no-wrap text-gray-200 px-4">2: </td>
+                <td class="font-thin break-all text-teal-300 pr-4"
+                > 59</td>
+            </tr>
+                    <tr>
+                <td class="font-thin whitespace-no-wrap text-gray-200 px-4">3: </td>
+                <td class="font-thin break-all text-teal-300 pr-4"
+                > S</td>
+            </tr>
+                    <tr>
+                <td class="font-thin whitespace-no-wrap text-gray-200 px-4">4: </td>
+                <td class="font-thin break-all text-teal-300 pr-4"
+                > R</td>
+            </tr>
+                    <tr>
+                <td class="font-thin whitespace-no-wrap text-gray-200 px-4">5: </td>
+                <td class="font-thin break-all text-teal-300 pr-4"
+                > 9</td>
+            </tr>
+                    <tr>
+                <td class="font-thin whitespace-no-wrap text-gray-200 px-4">6: </td>
+                <td class="font-thin break-all text-teal-300 pr-4"
+                > 1980-10-23</td>
+            </tr>
+                    <tr>
+                <td class="font-thin whitespace-no-wrap text-gray-200 px-4">7: </td>
+                <td class="font-thin break-all text-teal-300 pr-4"
+                > b9d9aa66-cccc-4f0f-b5a6-2041efe0ac4e</td>
+            </tr>
+                    <tr>
+                <td class="font-thin whitespace-no-wrap text-gray-200 px-4">8: </td>
+                <td class="font-thin break-all text-teal-300 pr-4"
+                > 2caf266b-b149-4ca3-b7f6-bba882e0b575</td>
+            </tr>
+                    <tr>
+                <td class="font-thin whitespace-no-wrap text-gray-200 px-4">9: </td>
+                <td class="font-thin break-all text-teal-300 pr-4"
+                > 2023-04-11 15:56:13</td>
+            </tr>
+                    <tr>
+                <td class="font-thin whitespace-no-wrap text-gray-200 px-4">10: </td>
+                <td class="font-thin break-all text-teal-300 pr-4"
+                > 2023-04-11 15:56:13</td>
+            </tr>
+            </table>
+</div>
+</div>
+                                            <div class="bg-gray-800 rounded-md overflow-hidden">
+    <span class="block w-full bg-gray-700 px-4 py-2">
+        <h3 class="text-base text-gray-300">Time: 1.12</h3>
+    </span>
+    <div >
+    <pre style="margin:0;"
+         class="h-full w-full bg-gray-300 rounded-lg overflow-hidden"
+    ><code class="language-sql">insert into `profiles` (`first_name`, `last_name`, `user_id`, `picture`, `city`, `zip`, `state`, `id`, `updated_at`, `created_at`) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)</code></pre>
+</div>                                                            <div>
+            <span class="block bg-gray-500 py-2 text-sm text-left text-gray-800 px-4 text-sm font-normal w-full"
+>Bindings</span>
+    
+    <table class="bg-gray-800 p-4 rounded-lg text-gray-100 my-4">
+                    <tr>
+                <td class="font-thin whitespace-no-wrap text-gray-200 px-4">0: </td>
+                <td class="font-thin break-all text-teal-300 pr-4"
+                > Oscar</td>
+            </tr>
+                    <tr>
+                <td class="font-thin whitespace-no-wrap text-gray-200 px-4">1: </td>
+                <td class="font-thin break-all text-teal-300 pr-4"
+                > Sauer</td>
+            </tr>
+                    <tr>
+                <td class="font-thin whitespace-no-wrap text-gray-200 px-4">2: </td>
+                <td class="font-thin break-all text-teal-300 pr-4"
+                > abf8f34b-6e6a-4983-b0da-3febef6ec045</td>
+            </tr>
+                    <tr>
+                <td class="font-thin whitespace-no-wrap text-gray-200 px-4">3: </td>
+                <td class="font-thin break-all text-teal-300 pr-4"
+                > https://via.placeholder.com/640x480.png/00aaaa?text=incidunt</td>
+            </tr>
+                    <tr>
+                <td class="font-thin whitespace-no-wrap text-gray-200 px-4">4: </td>
+                <td class="font-thin break-all text-teal-300 pr-4"
+                > Port Kayleeland</td>
+            </tr>
+                    <tr>
+                <td class="font-thin whitespace-no-wrap text-gray-200 px-4">5: </td>
+                <td class="font-thin break-all text-teal-300 pr-4"
+                > 28558</td>
+            </tr>
+                    <tr>
+                <td class="font-thin whitespace-no-wrap text-gray-200 px-4">6: </td>
+                <td class="font-thin break-all text-teal-300 pr-4"
+                > Washington</td>
+            </tr>
+                    <tr>
+                <td class="font-thin whitespace-no-wrap text-gray-200 px-4">7: </td>
+                <td class="font-thin break-all text-teal-300 pr-4"
+                > 5a170bee-7550-4cfb-8e6b-a3e846edbd45</td>
+            </tr>
+                    <tr>
+                <td class="font-thin whitespace-no-wrap text-gray-200 px-4">8: </td>
+                <td class="font-thin break-all text-teal-300 pr-4"
+                > 2023-04-11 15:56:13</td>
+            </tr>
+                    <tr>
+                <td class="font-thin whitespace-no-wrap text-gray-200 px-4">9: </td>
+                <td class="font-thin break-all text-teal-300 pr-4"
+                > 2023-04-11 15:56:13</td>
+            </tr>
+            </table>
+</div>
+</div>
+                                            <div class="bg-gray-800 rounded-md overflow-hidden">
+    <span class="block w-full bg-gray-700 px-4 py-2">
+        <h3 class="text-base text-gray-300">Time: 0.65</h3>
+    </span>
+    <div >
+    <pre style="margin:0;"
+         class="h-full w-full bg-gray-300 rounded-lg overflow-hidden"
+    ><code class="language-sql">insert into `players` (`height_in_ft`, `height_in_inch`, `weight`, `hit_side`, `throw_side`, `number_in_shirt`, `born_date`, `user_id`, `id`, `updated_at`, `created_at`) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)</code></pre>
+</div>                                                            <div>
+            <span class="block bg-gray-500 py-2 text-sm text-left text-gray-800 px-4 text-sm font-normal w-full"
+>Bindings</span>
+    
+    <table class="bg-gray-800 p-4 rounded-lg text-gray-100 my-4">
+                    <tr>
+                <td class="font-thin whitespace-no-wrap text-gray-200 px-4">0: </td>
+                <td class="font-thin break-all text-teal-300 pr-4"
+                > 3</td>
+            </tr>
+                    <tr>
+                <td class="font-thin whitespace-no-wrap text-gray-200 px-4">1: </td>
+                <td class="font-thin break-all text-teal-300 pr-4"
+                > 0</td>
+            </tr>
+                    <tr>
+                <td class="font-thin whitespace-no-wrap text-gray-200 px-4">2: </td>
+                <td class="font-thin break-all text-teal-300 pr-4"
+                > 65</td>
+            </tr>
+                    <tr>
+                <td class="font-thin whitespace-no-wrap text-gray-200 px-4">3: </td>
+                <td class="font-thin break-all text-teal-300 pr-4"
+                > R</td>
+            </tr>
+                    <tr>
+                <td class="font-thin whitespace-no-wrap text-gray-200 px-4">4: </td>
+                <td class="font-thin break-all text-teal-300 pr-4"
+                > L</td>
+            </tr>
+                    <tr>
+                <td class="font-thin whitespace-no-wrap text-gray-200 px-4">5: </td>
+                <td class="font-thin break-all text-teal-300 pr-4"
+                > 4</td>
+            </tr>
+                    <tr>
+                <td class="font-thin whitespace-no-wrap text-gray-200 px-4">6: </td>
+                <td class="font-thin break-all text-teal-300 pr-4"
+                > 1993-08-06</td>
+            </tr>
+                    <tr>
+                <td class="font-thin whitespace-no-wrap text-gray-200 px-4">7: </td>
+                <td class="font-thin break-all text-teal-300 pr-4"
+                > abf8f34b-6e6a-4983-b0da-3febef6ec045</td>
+            </tr>
+                    <tr>
+                <td class="font-thin whitespace-no-wrap text-gray-200 px-4">8: </td>
+                <td class="font-thin break-all text-teal-300 pr-4"
+                > eaa0e49a-8223-474e-9cd4-65f7c8cd1303</td>
+            </tr>
+                    <tr>
+                <td class="font-thin whitespace-no-wrap text-gray-200 px-4">9: </td>
+                <td class="font-thin break-all text-teal-300 pr-4"
+                > 2023-04-11 15:56:13</td>
+            </tr>
+                    <tr>
+                <td class="font-thin whitespace-no-wrap text-gray-200 px-4">10: </td>
+                <td class="font-thin break-all text-teal-300 pr-4"
+                > 2023-04-11 15:56:13</td>
+            </tr>
+            </table>
+</div>
+</div>
+                                            <div class="bg-gray-800 rounded-md overflow-hidden">
+    <span class="block w-full bg-gray-700 px-4 py-2">
+        <h3 class="text-base text-gray-300">Time: 0.53</h3>
+    </span>
+    <div >
+    <pre style="margin:0;"
+         class="h-full w-full bg-gray-300 rounded-lg overflow-hidden"
+    ><code class="language-sql">insert into `profiles` (`first_name`, `last_name`, `user_id`, `picture`, `city`, `zip`, `state`, `id`, `updated_at`, `created_at`) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)</code></pre>
+</div>                                                            <div>
+            <span class="block bg-gray-500 py-2 text-sm text-left text-gray-800 px-4 text-sm font-normal w-full"
+>Bindings</span>
+    
+    <table class="bg-gray-800 p-4 rounded-lg text-gray-100 my-4">
+                    <tr>
+                <td class="font-thin whitespace-no-wrap text-gray-200 px-4">0: </td>
+                <td class="font-thin break-all text-teal-300 pr-4"
+                > Ayana</td>
+            </tr>
+                    <tr>
+                <td class="font-thin whitespace-no-wrap text-gray-200 px-4">1: </td>
+                <td class="font-thin break-all text-teal-300 pr-4"
+                > Hyatt</td>
+            </tr>
+                    <tr>
+                <td class="font-thin whitespace-no-wrap text-gray-200 px-4">2: </td>
+                <td class="font-thin break-all text-teal-300 pr-4"
+                > e3390764-2f5b-45e4-ba9a-6589398f6812</td>
+            </tr>
+                    <tr>
+                <td class="font-thin whitespace-no-wrap text-gray-200 px-4">3: </td>
+                <td class="font-thin break-all text-teal-300 pr-4"
+                > https://via.placeholder.com/640x480.png/00ff44?text=in</td>
+            </tr>
+                    <tr>
+                <td class="font-thin whitespace-no-wrap text-gray-200 px-4">4: </td>
+                <td class="font-thin break-all text-teal-300 pr-4"
+                > Misaelmouth</td>
+            </tr>
+                    <tr>
+                <td class="font-thin whitespace-no-wrap text-gray-200 px-4">5: </td>
+                <td class="font-thin break-all text-teal-300 pr-4"
+                > 26110</td>
+            </tr>
+                    <tr>
+                <td class="font-thin whitespace-no-wrap text-gray-200 px-4">6: </td>
+                <td class="font-thin break-all text-teal-300 pr-4"
+                > Missouri</td>
+            </tr>
+                    <tr>
+                <td class="font-thin whitespace-no-wrap text-gray-200 px-4">7: </td>
+                <td class="font-thin break-all text-teal-300 pr-4"
+                > 9b67abb0-9be6-4816-9f5c-ff1d2231348b</td>
+            </tr>
+                    <tr>
+                <td class="font-thin whitespace-no-wrap text-gray-200 px-4">8: </td>
+                <td class="font-thin break-all text-teal-300 pr-4"
+                > 2023-04-11 15:56:13</td>
+            </tr>
+                    <tr>
+                <td class="font-thin whitespace-no-wrap text-gray-200 px-4">9: </td>
+                <td class="font-thin break-all text-teal-300 pr-4"
+                > 2023-04-11 15:56:13</td>
+            </tr>
+            </table>
+</div>
+</div>
+                                            <div class="bg-gray-800 rounded-md overflow-hidden">
+    <span class="block w-full bg-gray-700 px-4 py-2">
+        <h3 class="text-base text-gray-300">Time: 0.51</h3>
+    </span>
+    <div >
+    <pre style="margin:0;"
+         class="h-full w-full bg-gray-300 rounded-lg overflow-hidden"
+    ><code class="language-sql">insert into `players` (`height_in_ft`, `height_in_inch`, `weight`, `hit_side`, `throw_side`, `number_in_shirt`, `born_date`, `user_id`, `id`, `updated_at`, `created_at`) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)</code></pre>
+</div>                                                            <div>
+            <span class="block bg-gray-500 py-2 text-sm text-left text-gray-800 px-4 text-sm font-normal w-full"
+>Bindings</span>
+    
+    <table class="bg-gray-800 p-4 rounded-lg text-gray-100 my-4">
+                    <tr>
+                <td class="font-thin whitespace-no-wrap text-gray-200 px-4">0: </td>
+                <td class="font-thin break-all text-teal-300 pr-4"
+                > 4</td>
+            </tr>
+                    <tr>
+                <td class="font-thin whitespace-no-wrap text-gray-200 px-4">1: </td>
+                <td class="font-thin break-all text-teal-300 pr-4"
+                > 8</td>
+            </tr>
+                    <tr>
+                <td class="font-thin whitespace-no-wrap text-gray-200 px-4">2: </td>
+                <td class="font-thin break-all text-teal-300 pr-4"
+                > 17</td>
+            </tr>
+                    <tr>
+                <td class="font-thin whitespace-no-wrap text-gray-200 px-4">3: </td>
+                <td class="font-thin break-all text-teal-300 pr-4"
+                > L</td>
+            </tr>
+                    <tr>
+                <td class="font-thin whitespace-no-wrap text-gray-200 px-4">4: </td>
+                <td class="font-thin break-all text-teal-300 pr-4"
+                > L</td>
+            </tr>
+                    <tr>
+                <td class="font-thin whitespace-no-wrap text-gray-200 px-4">5: </td>
+                <td class="font-thin break-all text-teal-300 pr-4"
+                > 0</td>
+            </tr>
+                    <tr>
+                <td class="font-thin whitespace-no-wrap text-gray-200 px-4">6: </td>
+                <td class="font-thin break-all text-teal-300 pr-4"
+                > 1977-10-16</td>
+            </tr>
+                    <tr>
+                <td class="font-thin whitespace-no-wrap text-gray-200 px-4">7: </td>
+                <td class="font-thin break-all text-teal-300 pr-4"
+                > e3390764-2f5b-45e4-ba9a-6589398f6812</td>
+            </tr>
+                    <tr>
+                <td class="font-thin whitespace-no-wrap text-gray-200 px-4">8: </td>
+                <td class="font-thin break-all text-teal-300 pr-4"
+                > 6cd41bfe-cfa2-40ef-a6c1-5be290ad31e5</td>
+            </tr>
+                    <tr>
+                <td class="font-thin whitespace-no-wrap text-gray-200 px-4">9: </td>
+                <td class="font-thin break-all text-teal-300 pr-4"
+                > 2023-04-11 15:56:13</td>
+            </tr>
+                    <tr>
+                <td class="font-thin whitespace-no-wrap text-gray-200 px-4">10: </td>
+                <td class="font-thin break-all text-teal-300 pr-4"
+                > 2023-04-11 15:56:13</td>
+            </tr>
+            </table>
+</div>
+</div>
+                                            <div class="bg-gray-800 rounded-md overflow-hidden">
+    <span class="block w-full bg-gray-700 px-4 py-2">
+        <h3 class="text-base text-gray-300">Time: 0.74</h3>
+    </span>
+    <div >
+    <pre style="margin:0;"
+         class="h-full w-full bg-gray-300 rounded-lg overflow-hidden"
+    ><code class="language-sql">insert into `profiles` (`first_name`, `last_name`, `user_id`, `picture`, `city`, `zip`, `state`, `id`, `updated_at`, `created_at`) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)</code></pre>
+</div>                                                            <div>
+            <span class="block bg-gray-500 py-2 text-sm text-left text-gray-800 px-4 text-sm font-normal w-full"
+>Bindings</span>
+    
+    <table class="bg-gray-800 p-4 rounded-lg text-gray-100 my-4">
+                    <tr>
+                <td class="font-thin whitespace-no-wrap text-gray-200 px-4">0: </td>
+                <td class="font-thin break-all text-teal-300 pr-4"
+                > Tomas</td>
+            </tr>
+                    <tr>
+                <td class="font-thin whitespace-no-wrap text-gray-200 px-4">1: </td>
+                <td class="font-thin break-all text-teal-300 pr-4"
+                > Senger</td>
+            </tr>
+                    <tr>
+                <td class="font-thin whitespace-no-wrap text-gray-200 px-4">2: </td>
+                <td class="font-thin break-all text-teal-300 pr-4"
+                > 97617ac6-0092-497a-aa13-38375ca00072</td>
+            </tr>
+                    <tr>
+                <td class="font-thin whitespace-no-wrap text-gray-200 px-4">3: </td>
+                <td class="font-thin break-all text-teal-300 pr-4"
+                > https://via.placeholder.com/640x480.png/008899?text=nobis</td>
+            </tr>
+                    <tr>
+                <td class="font-thin whitespace-no-wrap text-gray-200 px-4">4: </td>
+                <td class="font-thin break-all text-teal-300 pr-4"
+                > Jerodville</td>
+            </tr>
+                    <tr>
+                <td class="font-thin whitespace-no-wrap text-gray-200 px-4">5: </td>
+                <td class="font-thin break-all text-teal-300 pr-4"
+                > 68005</td>
+            </tr>
+                    <tr>
+                <td class="font-thin whitespace-no-wrap text-gray-200 px-4">6: </td>
+                <td class="font-thin break-all text-teal-300 pr-4"
+                > Tennessee</td>
+            </tr>
+                    <tr>
+                <td class="font-thin whitespace-no-wrap text-gray-200 px-4">7: </td>
+                <td class="font-thin break-all text-teal-300 pr-4"
+                > b30d0c55-8fcc-430b-b3b2-0ea9a357a2be</td>
+            </tr>
+                    <tr>
+                <td class="font-thin whitespace-no-wrap text-gray-200 px-4">8: </td>
+                <td class="font-thin break-all text-teal-300 pr-4"
+                > 2023-04-11 15:56:13</td>
+            </tr>
+                    <tr>
+                <td class="font-thin whitespace-no-wrap text-gray-200 px-4">9: </td>
+                <td class="font-thin break-all text-teal-300 pr-4"
+                > 2023-04-11 15:56:13</td>
+            </tr>
+            </table>
+</div>
+</div>
+                                            <div class="bg-gray-800 rounded-md overflow-hidden">
+    <span class="block w-full bg-gray-700 px-4 py-2">
+        <h3 class="text-base text-gray-300">Time: 0.6</h3>
+    </span>
+    <div >
+    <pre style="margin:0;"
+         class="h-full w-full bg-gray-300 rounded-lg overflow-hidden"
+    ><code class="language-sql">insert into `players` (`height_in_ft`, `height_in_inch`, `weight`, `hit_side`, `throw_side`, `number_in_shirt`, `born_date`, `user_id`, `id`, `updated_at`, `created_at`) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)</code></pre>
+</div>                                                            <div>
+            <span class="block bg-gray-500 py-2 text-sm text-left text-gray-800 px-4 text-sm font-normal w-full"
+>Bindings</span>
+    
+    <table class="bg-gray-800 p-4 rounded-lg text-gray-100 my-4">
+                    <tr>
+                <td class="font-thin whitespace-no-wrap text-gray-200 px-4">0: </td>
+                <td class="font-thin break-all text-teal-300 pr-4"
+                > 5</td>
+            </tr>
+                    <tr>
+                <td class="font-thin whitespace-no-wrap text-gray-200 px-4">1: </td>
+                <td class="font-thin break-all text-teal-300 pr-4"
+                > 4</td>
+            </tr>
+                    <tr>
+                <td class="font-thin whitespace-no-wrap text-gray-200 px-4">2: </td>
+                <td class="font-thin break-all text-teal-300 pr-4"
+                > 36</td>
+            </tr>
+                    <tr>
+                <td class="font-thin whitespace-no-wrap text-gray-200 px-4">3: </td>
+                <td class="font-thin break-all text-teal-300 pr-4"
+                > S</td>
+            </tr>
+                    <tr>
+                <td class="font-thin whitespace-no-wrap text-gray-200 px-4">4: </td>
+                <td class="font-thin break-all text-teal-300 pr-4"
+                > R</td>
+            </tr>
+                    <tr>
+                <td class="font-thin whitespace-no-wrap text-gray-200 px-4">5: </td>
+                <td class="font-thin break-all text-teal-300 pr-4"
+                > 3</td>
+            </tr>
+                    <tr>
+                <td class="font-thin whitespace-no-wrap text-gray-200 px-4">6: </td>
+                <td class="font-thin break-all text-teal-300 pr-4"
+                > 1999-05-15</td>
+            </tr>
+                    <tr>
+                <td class="font-thin whitespace-no-wrap text-gray-200 px-4">7: </td>
+                <td class="font-thin break-all text-teal-300 pr-4"
+                > 97617ac6-0092-497a-aa13-38375ca00072</td>
+            </tr>
+                    <tr>
+                <td class="font-thin whitespace-no-wrap text-gray-200 px-4">8: </td>
+                <td class="font-thin break-all text-teal-300 pr-4"
+                > 9db3e9d9-e065-4b23-9a18-6039cb02cb1c</td>
+            </tr>
+                    <tr>
+                <td class="font-thin whitespace-no-wrap text-gray-200 px-4">9: </td>
+                <td class="font-thin break-all text-teal-300 pr-4"
+                > 2023-04-11 15:56:13</td>
+            </tr>
+                    <tr>
+                <td class="font-thin whitespace-no-wrap text-gray-200 px-4">10: </td>
+                <td class="font-thin break-all text-teal-300 pr-4"
+                > 2023-04-11 15:56:13</td>
+            </tr>
+            </table>
+</div>
+</div>
+                                    </div>
+            </div>
+            </div>
+    <div x-data="{
+            open: 1
+        }">
+        <label x-on:click="open = !open"  class="flex items-center space-x-2 cursor-pointer text-gray-300 hover:text-gray-100 mb-6 mt-2 text-xl">
+            <span>
+                                    Request Queries
+                            </span>
+            <svg x-cloak x-show="open" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7"></path></svg>
+            <svg x-cloak x-show="!open" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+        </label>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8" x-cloak x-show="open">
+                <div class="flex flex-col md:col-span-2 space-y-4">
+                                            <div class="bg-gray-800 rounded-md overflow-hidden">
+    <span class="block w-full bg-gray-700 px-4 py-2">
+        <h3 class="text-base text-gray-300">Time: 0.59</h3>
+    </span>
+    <div >
+    <pre style="margin:0;"
+         class="h-full w-full bg-gray-300 rounded-lg overflow-hidden"
+    ><code class="language-sql">insert into `practices` (`type`, `note`, `started`, `team_id`, `modes`, `id`, `updated_at`, `created_at`) values (?, ?, ?, ?, ?, ?, ?, ?)</code></pre>
+</div>                                                            <div>
+            <span class="block bg-gray-500 py-2 text-sm text-left text-gray-800 px-4 text-sm font-normal w-full"
+>Bindings</span>
+    
+    <table class="bg-gray-800 p-4 rounded-lg text-gray-100 my-4">
+                    <tr>
+                <td class="font-thin whitespace-no-wrap text-gray-200 px-4">0: </td>
+                <td class="font-thin break-all text-teal-300 pr-4"
+                > C</td>
+            </tr>
+                    <tr>
+                <td class="font-thin whitespace-no-wrap text-gray-200 px-4">1: </td>
+                <td class="font-thin break-all text-teal-300 pr-4"
+                > Quod at sunt tempora quis aliquam sunt et. Quas quis enim enim nemo aliquam expedita aut similique. Quidem nobis aliquam qui sed omnis officiis qui.</td>
+            </tr>
+                    <tr>
+                <td class="font-thin whitespace-no-wrap text-gray-200 px-4">2: </td>
+                <td class="font-thin break-all text-teal-300 pr-4"
+                > 2023-04-11T21:56:13.376240Z</td>
+            </tr>
+                    <tr>
+                <td class="font-thin whitespace-no-wrap text-gray-200 px-4">3: </td>
+                <td class="font-thin break-all text-teal-300 pr-4"
+                > f3ee6042-74d2-4c2d-9ea9-e34bed6126b3</td>
+            </tr>
+                    <tr>
+                <td class="font-thin whitespace-no-wrap text-gray-200 px-4">4: </td>
+                <td class="font-thin break-all text-teal-300 pr-4"
+                > HP</td>
+            </tr>
+                    <tr>
+                <td class="font-thin whitespace-no-wrap text-gray-200 px-4">5: </td>
+                <td class="font-thin break-all text-teal-300 pr-4"
+                > daf15699-abc2-43af-816b-ebd1ea567e2d</td>
+            </tr>
+                    <tr>
+                <td class="font-thin whitespace-no-wrap text-gray-200 px-4">6: </td>
+                <td class="font-thin break-all text-teal-300 pr-4"
+                > 2023-04-11 15:56:13</td>
+            </tr>
+                    <tr>
+                <td class="font-thin whitespace-no-wrap text-gray-200 px-4">7: </td>
+                <td class="font-thin break-all text-teal-300 pr-4"
+                > 2023-04-11 15:56:13</td>
+            </tr>
+            </table>
+</div>
+</div>
+                                            <div class="bg-gray-800 rounded-md overflow-hidden">
+    <span class="block w-full bg-gray-700 px-4 py-2">
+        <h3 class="text-base text-gray-300">Time: 0.55</h3>
+    </span>
+    <div >
+    <pre style="margin:0;"
+         class="h-full w-full bg-gray-300 rounded-lg overflow-hidden"
+    ><code class="language-sql">insert into `cage_practice_metas` (`practice_id`, `height_ft`, `height_inch`, `width_ft`, `width_inch`, `length_ft`, `length_inch`, `id`, `updated_at`, `created_at`) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)</code></pre>
+</div>                                                            <div>
+            <span class="block bg-gray-500 py-2 text-sm text-left text-gray-800 px-4 text-sm font-normal w-full"
+>Bindings</span>
+    
+    <table class="bg-gray-800 p-4 rounded-lg text-gray-100 my-4">
+                    <tr>
+                <td class="font-thin whitespace-no-wrap text-gray-200 px-4">0: </td>
+                <td class="font-thin break-all text-teal-300 pr-4"
+                > daf15699-abc2-43af-816b-ebd1ea567e2d</td>
+            </tr>
+                    <tr>
+                <td class="font-thin whitespace-no-wrap text-gray-200 px-4">1: </td>
+                <td class="font-thin break-all text-teal-300 pr-4"
+                > 18</td>
+            </tr>
+                    <tr>
+                <td class="font-thin whitespace-no-wrap text-gray-200 px-4">2: </td>
+                <td class="font-thin break-all text-teal-300 pr-4"
+                > 3</td>
+            </tr>
+                    <tr>
+                <td class="font-thin whitespace-no-wrap text-gray-200 px-4">3: </td>
+                <td class="font-thin break-all text-teal-300 pr-4"
+                > 20</td>
+            </tr>
+                    <tr>
+                <td class="font-thin whitespace-no-wrap text-gray-200 px-4">4: </td>
+                <td class="font-thin break-all text-teal-300 pr-4"
+                > 4</td>
+            </tr>
+                    <tr>
+                <td class="font-thin whitespace-no-wrap text-gray-200 px-4">5: </td>
+                <td class="font-thin break-all text-teal-300 pr-4"
+                > 14</td>
+            </tr>
+                    <tr>
+                <td class="font-thin whitespace-no-wrap text-gray-200 px-4">6: </td>
+                <td class="font-thin break-all text-teal-300 pr-4"
+                > 3</td>
+            </tr>
+                    <tr>
+                <td class="font-thin whitespace-no-wrap text-gray-200 px-4">7: </td>
+                <td class="font-thin break-all text-teal-300 pr-4"
+                > 5d328379-e39a-4078-8f71-0dce8904fdbe</td>
+            </tr>
+                    <tr>
+                <td class="font-thin whitespace-no-wrap text-gray-200 px-4">8: </td>
+                <td class="font-thin break-all text-teal-300 pr-4"
+                > 2023-04-11 15:56:13</td>
+            </tr>
+                    <tr>
+                <td class="font-thin whitespace-no-wrap text-gray-200 px-4">9: </td>
+                <td class="font-thin break-all text-teal-300 pr-4"
+                > 2023-04-11 15:56:13</td>
+            </tr>
+            </table>
+</div>
+</div>
+                                            <div class="bg-gray-800 rounded-md overflow-hidden">
+    <span class="block w-full bg-gray-700 px-4 py-2">
+        <h3 class="text-base text-gray-300">Time: 0.56</h3>
+    </span>
+    <div >
+    <pre style="margin:0;"
+         class="h-full w-full bg-gray-300 rounded-lg overflow-hidden"
+    ><code class="language-sql">insert into `practice_line_ups` (`practice_id`, `user_id`, `sort`, `is_batting`, `is_pitching`, `id`, `updated_at`, `created_at`) values (?, ?, ?, ?, ?, ?, ?, ?)</code></pre>
+</div>                                                            <div>
+            <span class="block bg-gray-500 py-2 text-sm text-left text-gray-800 px-4 text-sm font-normal w-full"
+>Bindings</span>
+    
+    <table class="bg-gray-800 p-4 rounded-lg text-gray-100 my-4">
+                    <tr>
+                <td class="font-thin whitespace-no-wrap text-gray-200 px-4">0: </td>
+                <td class="font-thin break-all text-teal-300 pr-4"
+                > daf15699-abc2-43af-816b-ebd1ea567e2d</td>
+            </tr>
+                    <tr>
+                <td class="font-thin whitespace-no-wrap text-gray-200 px-4">1: </td>
+                <td class="font-thin break-all text-teal-300 pr-4"
+                > b9d9aa66-cccc-4f0f-b5a6-2041efe0ac4e</td>
+            </tr>
+                    <tr>
+                <td class="font-thin whitespace-no-wrap text-gray-200 px-4">2: </td>
+                <td class="font-thin break-all text-teal-300 pr-4"
+                > 1</td>
+            </tr>
+                    <tr>
+                <td class="font-thin whitespace-no-wrap text-gray-200 px-4">3: </td>
+                <td class="font-thin break-all text-teal-300 pr-4"
+                > 1</td>
+            </tr>
+                    <tr>
+                <td class="font-thin whitespace-no-wrap text-gray-200 px-4">4: </td>
+                <td class="font-thin break-all text-teal-300 pr-4"
+                > </td>
+            </tr>
+                    <tr>
+                <td class="font-thin whitespace-no-wrap text-gray-200 px-4">5: </td>
+                <td class="font-thin break-all text-teal-300 pr-4"
+                > 31ab0571-c7b0-4065-99f1-526e987c5049</td>
+            </tr>
+                    <tr>
+                <td class="font-thin whitespace-no-wrap text-gray-200 px-4">6: </td>
+                <td class="font-thin break-all text-teal-300 pr-4"
+                > 2023-04-11 15:56:13</td>
+            </tr>
+                    <tr>
+                <td class="font-thin whitespace-no-wrap text-gray-200 px-4">7: </td>
+                <td class="font-thin break-all text-teal-300 pr-4"
+                > 2023-04-11 15:56:13</td>
+            </tr>
+            </table>
+</div>
+</div>
+                                            <div class="bg-gray-800 rounded-md overflow-hidden">
+    <span class="block w-full bg-gray-700 px-4 py-2">
+        <h3 class="text-base text-gray-300">Time: 0.46</h3>
+    </span>
+    <div >
+    <pre style="margin:0;"
+         class="h-full w-full bg-gray-300 rounded-lg overflow-hidden"
+    ><code class="language-sql">insert into `practice_line_ups` (`practice_id`, `user_id`, `sort`, `is_batting`, `is_pitching`, `id`, `updated_at`, `created_at`) values (?, ?, ?, ?, ?, ?, ?, ?)</code></pre>
+</div>                                                            <div>
+            <span class="block bg-gray-500 py-2 text-sm text-left text-gray-800 px-4 text-sm font-normal w-full"
+>Bindings</span>
+    
+    <table class="bg-gray-800 p-4 rounded-lg text-gray-100 my-4">
+                    <tr>
+                <td class="font-thin whitespace-no-wrap text-gray-200 px-4">0: </td>
+                <td class="font-thin break-all text-teal-300 pr-4"
+                > daf15699-abc2-43af-816b-ebd1ea567e2d</td>
+            </tr>
+                    <tr>
+                <td class="font-thin whitespace-no-wrap text-gray-200 px-4">1: </td>
+                <td class="font-thin break-all text-teal-300 pr-4"
+                > abf8f34b-6e6a-4983-b0da-3febef6ec045</td>
+            </tr>
+                    <tr>
+                <td class="font-thin whitespace-no-wrap text-gray-200 px-4">2: </td>
+                <td class="font-thin break-all text-teal-300 pr-4"
+                > 2</td>
+            </tr>
+                    <tr>
+                <td class="font-thin whitespace-no-wrap text-gray-200 px-4">3: </td>
+                <td class="font-thin break-all text-teal-300 pr-4"
+                > 1</td>
+            </tr>
+                    <tr>
+                <td class="font-thin whitespace-no-wrap text-gray-200 px-4">4: </td>
+                <td class="font-thin break-all text-teal-300 pr-4"
+                > </td>
+            </tr>
+                    <tr>
+                <td class="font-thin whitespace-no-wrap text-gray-200 px-4">5: </td>
+                <td class="font-thin break-all text-teal-300 pr-4"
+                > bb8cf006-0ca1-428a-8eaf-140ce9eaff5e</td>
+            </tr>
+                    <tr>
+                <td class="font-thin whitespace-no-wrap text-gray-200 px-4">6: </td>
+                <td class="font-thin break-all text-teal-300 pr-4"
+                > 2023-04-11 15:56:13</td>
+            </tr>
+                    <tr>
+                <td class="font-thin whitespace-no-wrap text-gray-200 px-4">7: </td>
+                <td class="font-thin break-all text-teal-300 pr-4"
+                > 2023-04-11 15:56:13</td>
+            </tr>
+            </table>
+</div>
+</div>
+                                            <div class="bg-gray-800 rounded-md overflow-hidden">
+    <span class="block w-full bg-gray-700 px-4 py-2">
+        <h3 class="text-base text-gray-300">Time: 0.56</h3>
+    </span>
+    <div >
+    <pre style="margin:0;"
+         class="h-full w-full bg-gray-300 rounded-lg overflow-hidden"
+    ><code class="language-sql">insert into `practice_line_ups` (`practice_id`, `user_id`, `sort`, `is_batting`, `is_pitching`, `id`, `updated_at`, `created_at`) values (?, ?, ?, ?, ?, ?, ?, ?)</code></pre>
+</div>                                                            <div>
+            <span class="block bg-gray-500 py-2 text-sm text-left text-gray-800 px-4 text-sm font-normal w-full"
+>Bindings</span>
+    
+    <table class="bg-gray-800 p-4 rounded-lg text-gray-100 my-4">
+                    <tr>
+                <td class="font-thin whitespace-no-wrap text-gray-200 px-4">0: </td>
+                <td class="font-thin break-all text-teal-300 pr-4"
+                > daf15699-abc2-43af-816b-ebd1ea567e2d</td>
+            </tr>
+                    <tr>
+                <td class="font-thin whitespace-no-wrap text-gray-200 px-4">1: </td>
+                <td class="font-thin break-all text-teal-300 pr-4"
+                > e3390764-2f5b-45e4-ba9a-6589398f6812</td>
+            </tr>
+                    <tr>
+                <td class="font-thin whitespace-no-wrap text-gray-200 px-4">2: </td>
+                <td class="font-thin break-all text-teal-300 pr-4"
+                > 3</td>
+            </tr>
+                    <tr>
+                <td class="font-thin whitespace-no-wrap text-gray-200 px-4">3: </td>
+                <td class="font-thin break-all text-teal-300 pr-4"
+                > 1</td>
+            </tr>
+                    <tr>
+                <td class="font-thin whitespace-no-wrap text-gray-200 px-4">4: </td>
+                <td class="font-thin break-all text-teal-300 pr-4"
+                > </td>
+            </tr>
+                    <tr>
+                <td class="font-thin whitespace-no-wrap text-gray-200 px-4">5: </td>
+                <td class="font-thin break-all text-teal-300 pr-4"
+                > bc1d9c23-2d84-429c-9fed-d1b2fd1a25b1</td>
+            </tr>
+                    <tr>
+                <td class="font-thin whitespace-no-wrap text-gray-200 px-4">6: </td>
+                <td class="font-thin break-all text-teal-300 pr-4"
+                > 2023-04-11 15:56:13</td>
+            </tr>
+                    <tr>
+                <td class="font-thin whitespace-no-wrap text-gray-200 px-4">7: </td>
+                <td class="font-thin break-all text-teal-300 pr-4"
+                > 2023-04-11 15:56:13</td>
+            </tr>
+            </table>
+</div>
+</div>
+                                            <div class="bg-gray-800 rounded-md overflow-hidden">
+    <span class="block w-full bg-gray-700 px-4 py-2">
+        <h3 class="text-base text-gray-300">Time: 0.61</h3>
+    </span>
+    <div >
+    <pre style="margin:0;"
+         class="h-full w-full bg-gray-300 rounded-lg overflow-hidden"
+    ><code class="language-sql">insert into `practice_line_ups` (`practice_id`, `user_id`, `sort`, `is_batting`, `is_pitching`, `id`, `updated_at`, `created_at`) values (?, ?, ?, ?, ?, ?, ?, ?)</code></pre>
+</div>                                                            <div>
+            <span class="block bg-gray-500 py-2 text-sm text-left text-gray-800 px-4 text-sm font-normal w-full"
+>Bindings</span>
+    
+    <table class="bg-gray-800 p-4 rounded-lg text-gray-100 my-4">
+                    <tr>
+                <td class="font-thin whitespace-no-wrap text-gray-200 px-4">0: </td>
+                <td class="font-thin break-all text-teal-300 pr-4"
+                > daf15699-abc2-43af-816b-ebd1ea567e2d</td>
+            </tr>
+                    <tr>
+                <td class="font-thin whitespace-no-wrap text-gray-200 px-4">1: </td>
+                <td class="font-thin break-all text-teal-300 pr-4"
+                > 97617ac6-0092-497a-aa13-38375ca00072</td>
+            </tr>
+                    <tr>
+                <td class="font-thin whitespace-no-wrap text-gray-200 px-4">2: </td>
+                <td class="font-thin break-all text-teal-300 pr-4"
+                > 4</td>
+            </tr>
+                    <tr>
+                <td class="font-thin whitespace-no-wrap text-gray-200 px-4">3: </td>
+                <td class="font-thin break-all text-teal-300 pr-4"
+                > 1</td>
+            </tr>
+                    <tr>
+                <td class="font-thin whitespace-no-wrap text-gray-200 px-4">4: </td>
+                <td class="font-thin break-all text-teal-300 pr-4"
+                > </td>
+            </tr>
+                    <tr>
+                <td class="font-thin whitespace-no-wrap text-gray-200 px-4">5: </td>
+                <td class="font-thin break-all text-teal-300 pr-4"
+                > 3f816344-32be-45b3-a510-2334b538b507</td>
+            </tr>
+                    <tr>
+                <td class="font-thin whitespace-no-wrap text-gray-200 px-4">6: </td>
+                <td class="font-thin break-all text-teal-300 pr-4"
+                > 2023-04-11 15:56:13</td>
+            </tr>
+                    <tr>
+                <td class="font-thin whitespace-no-wrap text-gray-200 px-4">7: </td>
+                <td class="font-thin break-all text-teal-300 pr-4"
+                > 2023-04-11 15:56:13</td>
+            </tr>
+            </table>
+</div>
+</div>
+                                            <div class="bg-gray-800 rounded-md overflow-hidden">
+    <span class="block w-full bg-gray-700 px-4 py-2">
+        <h3 class="text-base text-gray-300">Time: 0.65</h3>
+    </span>
+    <div >
+    <pre style="margin:0;"
+         class="h-full w-full bg-gray-300 rounded-lg overflow-hidden"
+    ><code class="language-sql">select * from `users` where `users`.`id` = ? and `users`.`deleted_at` is null limit 1</code></pre>
+</div>                                                            <div>
+            <span class="block bg-gray-500 py-2 text-sm text-left text-gray-800 px-4 text-sm font-normal w-full"
+>Bindings</span>
+    
+    <table class="bg-gray-800 p-4 rounded-lg text-gray-100 my-4">
+                    <tr>
+                <td class="font-thin whitespace-no-wrap text-gray-200 px-4">0: </td>
+                <td class="font-thin break-all text-teal-300 pr-4"
+                > b9d9aa66-cccc-4f0f-b5a6-2041efe0ac4e</td>
+            </tr>
+            </table>
+</div>
+</div>
+                                            <div class="bg-gray-800 rounded-md overflow-hidden">
+    <span class="block w-full bg-gray-700 px-4 py-2">
+        <h3 class="text-base text-gray-300">Time: 0.62</h3>
+    </span>
+    <div >
+    <pre style="margin:0;"
+         class="h-full w-full bg-gray-300 rounded-lg overflow-hidden"
+    ><code class="language-sql">select * from `profiles` where `profiles`.`user_id` = ? and `profiles`.`user_id` is not null and `profiles`.`deleted_at` is null limit 1</code></pre>
+</div>                                                            <div>
+            <span class="block bg-gray-500 py-2 text-sm text-left text-gray-800 px-4 text-sm font-normal w-full"
+>Bindings</span>
+    
+    <table class="bg-gray-800 p-4 rounded-lg text-gray-100 my-4">
+                    <tr>
+                <td class="font-thin whitespace-no-wrap text-gray-200 px-4">0: </td>
+                <td class="font-thin break-all text-teal-300 pr-4"
+                > b9d9aa66-cccc-4f0f-b5a6-2041efe0ac4e</td>
+            </tr>
+            </table>
+</div>
+</div>
+                                            <div class="bg-gray-800 rounded-md overflow-hidden">
+    <span class="block w-full bg-gray-700 px-4 py-2">
+        <h3 class="text-base text-gray-300">Time: 0.48</h3>
+    </span>
+    <div >
+    <pre style="margin:0;"
+         class="h-full w-full bg-gray-300 rounded-lg overflow-hidden"
+    ><code class="language-sql">select * from `players` where `players`.`user_id` = ? and `players`.`user_id` is not null and `players`.`deleted_at` is null limit 1</code></pre>
+</div>                                                            <div>
+            <span class="block bg-gray-500 py-2 text-sm text-left text-gray-800 px-4 text-sm font-normal w-full"
+>Bindings</span>
+    
+    <table class="bg-gray-800 p-4 rounded-lg text-gray-100 my-4">
+                    <tr>
+                <td class="font-thin whitespace-no-wrap text-gray-200 px-4">0: </td>
+                <td class="font-thin break-all text-teal-300 pr-4"
+                > b9d9aa66-cccc-4f0f-b5a6-2041efe0ac4e</td>
+            </tr>
+            </table>
+</div>
+</div>
+                                            <div class="bg-gray-800 rounded-md overflow-hidden">
+    <span class="block w-full bg-gray-700 px-4 py-2">
+        <h3 class="text-base text-gray-300">Time: 0.52</h3>
+    </span>
+    <div >
+    <pre style="margin:0;"
+         class="h-full w-full bg-gray-300 rounded-lg overflow-hidden"
+    ><code class="language-sql">select * from `users` where `users`.`id` = ? and `users`.`deleted_at` is null limit 1</code></pre>
+</div>                                                            <div>
+            <span class="block bg-gray-500 py-2 text-sm text-left text-gray-800 px-4 text-sm font-normal w-full"
+>Bindings</span>
+    
+    <table class="bg-gray-800 p-4 rounded-lg text-gray-100 my-4">
+                    <tr>
+                <td class="font-thin whitespace-no-wrap text-gray-200 px-4">0: </td>
+                <td class="font-thin break-all text-teal-300 pr-4"
+                > abf8f34b-6e6a-4983-b0da-3febef6ec045</td>
+            </tr>
+            </table>
+</div>
+</div>
+                                            <div class="bg-gray-800 rounded-md overflow-hidden">
+    <span class="block w-full bg-gray-700 px-4 py-2">
+        <h3 class="text-base text-gray-300">Time: 0.47</h3>
+    </span>
+    <div >
+    <pre style="margin:0;"
+         class="h-full w-full bg-gray-300 rounded-lg overflow-hidden"
+    ><code class="language-sql">select * from `profiles` where `profiles`.`user_id` = ? and `profiles`.`user_id` is not null and `profiles`.`deleted_at` is null limit 1</code></pre>
+</div>                                                            <div>
+            <span class="block bg-gray-500 py-2 text-sm text-left text-gray-800 px-4 text-sm font-normal w-full"
+>Bindings</span>
+    
+    <table class="bg-gray-800 p-4 rounded-lg text-gray-100 my-4">
+                    <tr>
+                <td class="font-thin whitespace-no-wrap text-gray-200 px-4">0: </td>
+                <td class="font-thin break-all text-teal-300 pr-4"
+                > abf8f34b-6e6a-4983-b0da-3febef6ec045</td>
+            </tr>
+            </table>
+</div>
+</div>
+                                            <div class="bg-gray-800 rounded-md overflow-hidden">
+    <span class="block w-full bg-gray-700 px-4 py-2">
+        <h3 class="text-base text-gray-300">Time: 0.45</h3>
+    </span>
+    <div >
+    <pre style="margin:0;"
+         class="h-full w-full bg-gray-300 rounded-lg overflow-hidden"
+    ><code class="language-sql">select * from `players` where `players`.`user_id` = ? and `players`.`user_id` is not null and `players`.`deleted_at` is null limit 1</code></pre>
+</div>                                                            <div>
+            <span class="block bg-gray-500 py-2 text-sm text-left text-gray-800 px-4 text-sm font-normal w-full"
+>Bindings</span>
+    
+    <table class="bg-gray-800 p-4 rounded-lg text-gray-100 my-4">
+                    <tr>
+                <td class="font-thin whitespace-no-wrap text-gray-200 px-4">0: </td>
+                <td class="font-thin break-all text-teal-300 pr-4"
+                > abf8f34b-6e6a-4983-b0da-3febef6ec045</td>
+            </tr>
+            </table>
+</div>
+</div>
+                                            <div class="bg-gray-800 rounded-md overflow-hidden">
+    <span class="block w-full bg-gray-700 px-4 py-2">
+        <h3 class="text-base text-gray-300">Time: 0.43</h3>
+    </span>
+    <div >
+    <pre style="margin:0;"
+         class="h-full w-full bg-gray-300 rounded-lg overflow-hidden"
+    ><code class="language-sql">select * from `users` where `users`.`id` = ? and `users`.`deleted_at` is null limit 1</code></pre>
+</div>                                                            <div>
+            <span class="block bg-gray-500 py-2 text-sm text-left text-gray-800 px-4 text-sm font-normal w-full"
+>Bindings</span>
+    
+    <table class="bg-gray-800 p-4 rounded-lg text-gray-100 my-4">
+                    <tr>
+                <td class="font-thin whitespace-no-wrap text-gray-200 px-4">0: </td>
+                <td class="font-thin break-all text-teal-300 pr-4"
+                > e3390764-2f5b-45e4-ba9a-6589398f6812</td>
+            </tr>
+            </table>
+</div>
+</div>
+                                            <div class="bg-gray-800 rounded-md overflow-hidden">
+    <span class="block w-full bg-gray-700 px-4 py-2">
+        <h3 class="text-base text-gray-300">Time: 0.52</h3>
+    </span>
+    <div >
+    <pre style="margin:0;"
+         class="h-full w-full bg-gray-300 rounded-lg overflow-hidden"
+    ><code class="language-sql">select * from `profiles` where `profiles`.`user_id` = ? and `profiles`.`user_id` is not null and `profiles`.`deleted_at` is null limit 1</code></pre>
+</div>                                                            <div>
+            <span class="block bg-gray-500 py-2 text-sm text-left text-gray-800 px-4 text-sm font-normal w-full"
+>Bindings</span>
+    
+    <table class="bg-gray-800 p-4 rounded-lg text-gray-100 my-4">
+                    <tr>
+                <td class="font-thin whitespace-no-wrap text-gray-200 px-4">0: </td>
+                <td class="font-thin break-all text-teal-300 pr-4"
+                > e3390764-2f5b-45e4-ba9a-6589398f6812</td>
+            </tr>
+            </table>
+</div>
+</div>
+                                            <div class="bg-gray-800 rounded-md overflow-hidden">
+    <span class="block w-full bg-gray-700 px-4 py-2">
+        <h3 class="text-base text-gray-300">Time: 0.44</h3>
+    </span>
+    <div >
+    <pre style="margin:0;"
+         class="h-full w-full bg-gray-300 rounded-lg overflow-hidden"
+    ><code class="language-sql">select * from `players` where `players`.`user_id` = ? and `players`.`user_id` is not null and `players`.`deleted_at` is null limit 1</code></pre>
+</div>                                                            <div>
+            <span class="block bg-gray-500 py-2 text-sm text-left text-gray-800 px-4 text-sm font-normal w-full"
+>Bindings</span>
+    
+    <table class="bg-gray-800 p-4 rounded-lg text-gray-100 my-4">
+                    <tr>
+                <td class="font-thin whitespace-no-wrap text-gray-200 px-4">0: </td>
+                <td class="font-thin break-all text-teal-300 pr-4"
+                > e3390764-2f5b-45e4-ba9a-6589398f6812</td>
+            </tr>
+            </table>
+</div>
+</div>
+                                            <div class="bg-gray-800 rounded-md overflow-hidden">
+    <span class="block w-full bg-gray-700 px-4 py-2">
+        <h3 class="text-base text-gray-300">Time: 0.69</h3>
+    </span>
+    <div >
+    <pre style="margin:0;"
+         class="h-full w-full bg-gray-300 rounded-lg overflow-hidden"
+    ><code class="language-sql">select * from `users` where `users`.`id` = ? and `users`.`deleted_at` is null limit 1</code></pre>
+</div>                                                            <div>
+            <span class="block bg-gray-500 py-2 text-sm text-left text-gray-800 px-4 text-sm font-normal w-full"
+>Bindings</span>
+    
+    <table class="bg-gray-800 p-4 rounded-lg text-gray-100 my-4">
+                    <tr>
+                <td class="font-thin whitespace-no-wrap text-gray-200 px-4">0: </td>
+                <td class="font-thin break-all text-teal-300 pr-4"
+                > 97617ac6-0092-497a-aa13-38375ca00072</td>
+            </tr>
+            </table>
+</div>
+</div>
+                                            <div class="bg-gray-800 rounded-md overflow-hidden">
+    <span class="block w-full bg-gray-700 px-4 py-2">
+        <h3 class="text-base text-gray-300">Time: 0.68</h3>
+    </span>
+    <div >
+    <pre style="margin:0;"
+         class="h-full w-full bg-gray-300 rounded-lg overflow-hidden"
+    ><code class="language-sql">select * from `profiles` where `profiles`.`user_id` = ? and `profiles`.`user_id` is not null and `profiles`.`deleted_at` is null limit 1</code></pre>
+</div>                                                            <div>
+            <span class="block bg-gray-500 py-2 text-sm text-left text-gray-800 px-4 text-sm font-normal w-full"
+>Bindings</span>
+    
+    <table class="bg-gray-800 p-4 rounded-lg text-gray-100 my-4">
+                    <tr>
+                <td class="font-thin whitespace-no-wrap text-gray-200 px-4">0: </td>
+                <td class="font-thin break-all text-teal-300 pr-4"
+                > 97617ac6-0092-497a-aa13-38375ca00072</td>
+            </tr>
+            </table>
+</div>
+</div>
+                                            <div class="bg-gray-800 rounded-md overflow-hidden">
+    <span class="block w-full bg-gray-700 px-4 py-2">
+        <h3 class="text-base text-gray-300">Time: 0.53</h3>
+    </span>
+    <div >
+    <pre style="margin:0;"
+         class="h-full w-full bg-gray-300 rounded-lg overflow-hidden"
+    ><code class="language-sql">select * from `players` where `players`.`user_id` = ? and `players`.`user_id` is not null and `players`.`deleted_at` is null limit 1</code></pre>
+</div>                                                            <div>
+            <span class="block bg-gray-500 py-2 text-sm text-left text-gray-800 px-4 text-sm font-normal w-full"
+>Bindings</span>
+    
+    <table class="bg-gray-800 p-4 rounded-lg text-gray-100 my-4">
+                    <tr>
+                <td class="font-thin whitespace-no-wrap text-gray-200 px-4">0: </td>
+                <td class="font-thin break-all text-teal-300 pr-4"
+                > 97617ac6-0092-497a-aa13-38375ca00072</td>
+            </tr>
+            </table>
+</div>
+</div>
+                                    </div>
+                <div class="relative h-full">
+                    <div class="sticky top-0">
+                        <div class="bg-gray-800 rounded-md overflow-hidden">
+    <span class="block w-full bg-gray-700 px-4 py-2">
+        <h3 class="text-base text-gray-300">Request</h3>
+    </span>
+    <div>
+    
+    <table class="bg-gray-800 p-4 rounded-lg text-gray-100 my-4">
+                    <tr>
+                <td class="font-thin whitespace-no-wrap text-gray-200 px-4">Method: </td>
+                <td class="font-thin break-all text-teal-300 pr-4"
+                > POST</td>
+            </tr>
+                    <tr>
+                <td class="font-thin whitespace-no-wrap text-gray-200 px-4">Route: </td>
+                <td class="font-thin break-all text-teal-300 pr-4"
+                > api/training</td>
+            </tr>
+                    <tr>
+                <td class="font-thin whitespace-no-wrap text-gray-200 px-4">Example: </td>
+                <td class="font-thin break-all text-teal-300 pr-4"
+                > api/training</td>
+            </tr>
+            </table>
+</div>
+
+    
+            <table class="bg-gray-800 p-4 overflow-hidden text-gray-100 w-full">
+    <thead>
+        <tr class="bg-gray-500">
+            <th class="py-2 text-sm text-left text-gray-800 px-4 text-sm font-normal">Input</th>
+            <th class="py-2 text-sm text-left text-gray-800 px-4 text-sm font-normal">Value</th>
+        </tr>
+    </thead>
+    <tbody>
+                    <tr>
+                <td class="px-4 py-2 font-thin text-gray-200">team</td>
+                <td class="px-4 py-2 font-thin text-teal-300 break-all">
+                                            f3ee6042-74d2-4c2d-9ea9-e34bed6126b3
+                                    </td>
+            </tr>
+                    <tr>
+                <td class="px-4 py-2 font-thin text-gray-200">type</td>
+                <td class="px-4 py-2 font-thin text-teal-300 break-all">
+                                            C
+                                    </td>
+            </tr>
+                    <tr>
+                <td class="px-4 py-2 font-thin text-gray-200">note</td>
+                <td class="px-4 py-2 font-thin text-teal-300 break-all">
+                                            Quod at sunt tempora quis aliquam sunt et. Quas quis enim enim nemo aliquam expedita aut similique. Quidem nobis aliquam qui sed omnis officiis qui.
+                                    </td>
+            </tr>
+                    <tr>
+                <td class="px-4 py-2 font-thin text-gray-200">cage</td>
+                <td class="px-4 py-2 font-thin text-teal-300 break-all">
+                                            {
+    &quot;height&quot;: {
+        &quot;ft&quot;: 18,
+        &quot;inch&quot;: 3
+    },
+    &quot;width&quot;: {
+        &quot;ft&quot;: 20,
+        &quot;inch&quot;: 4
+    },
+    &quot;length&quot;: {
+        &quot;ft&quot;: 14,
+        &quot;inch&quot;: 3
+    }
+}
+                                    </td>
+            </tr>
+                    <tr>
+                <td class="px-4 py-2 font-thin text-gray-200">players</td>
+                <td class="px-4 py-2 font-thin text-teal-300 break-all">
+                                            [
+    {
+        &quot;id&quot;: &quot;b9d9aa66-cccc-4f0f-b5a6-2041efe0ac4e&quot;,
+        &quot;sort&quot;: 1
+    },
+    {
+        &quot;id&quot;: &quot;abf8f34b-6e6a-4983-b0da-3febef6ec045&quot;,
+        &quot;sort&quot;: 2
+    },
+    {
+        &quot;id&quot;: &quot;e3390764-2f5b-45e4-ba9a-6589398f6812&quot;,
+        &quot;sort&quot;: 3
+    },
+    {
+        &quot;id&quot;: &quot;97617ac6-0092-497a-aa13-38375ca00072&quot;,
+        &quot;sort&quot;: 4
+    }
+]
+                                    </td>
+            </tr>
+            </tbody>
+</table>
+    
+            <div>
+            <span class="block bg-gray-500 py-2 text-sm text-left text-gray-800 px-4 text-sm font-normal w-full"
+>Request Headers</span>
+    
+    <table class="bg-gray-800 p-4 rounded-lg text-gray-100 my-4">
+                    <tr>
+                <td class="font-thin whitespace-no-wrap text-gray-200 px-4">host: </td>
+                <td class="font-thin break-all text-teal-300 pr-4"
+                > 127.0.0.1:8000</td>
+            </tr>
+                    <tr>
+                <td class="font-thin whitespace-no-wrap text-gray-200 px-4">user-agent: </td>
+                <td class="font-thin break-all text-teal-300 pr-4"
+                > Symfony</td>
+            </tr>
+                    <tr>
+                <td class="font-thin whitespace-no-wrap text-gray-200 px-4">accept: </td>
+                <td class="font-thin break-all text-teal-300 pr-4"
+                > application/json</td>
+            </tr>
+                    <tr>
+                <td class="font-thin whitespace-no-wrap text-gray-200 px-4">accept-language: </td>
+                <td class="font-thin break-all text-teal-300 pr-4"
+                > en-us,en;q=0.5</td>
+            </tr>
+                    <tr>
+                <td class="font-thin whitespace-no-wrap text-gray-200 px-4">accept-charset: </td>
+                <td class="font-thin break-all text-teal-300 pr-4"
+                > ISO-8859-1,utf-8;q=0.7,*;q=0.7</td>
+            </tr>
+                    <tr>
+                <td class="font-thin whitespace-no-wrap text-gray-200 px-4">content-length: </td>
+                <td class="font-thin break-all text-teal-300 pr-4"
+                > 540</td>
+            </tr>
+                    <tr>
+                <td class="font-thin whitespace-no-wrap text-gray-200 px-4">content-type: </td>
+                <td class="font-thin break-all text-teal-300 pr-4"
+                > application/json</td>
+            </tr>
+            </table>
+</div>
+</div>
+                    </div>
+                </div>
+            </div>
+            </div>
+                     </div>
+                                                                </div>
+</div>
+                </div>
+            </div>
+        </main>
+    </div>
+</div>
+    </div>
+    <script src="https://fungometrics-api-doc.surge.sh/assets/js/build.js"></script>
+
+</body>
+</html>
+
